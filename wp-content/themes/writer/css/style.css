@@ -1,3 +1,78 @@
+
+
+/* Typography */
+
+.fontSize15{
+    font-size: 15px;
+}
+
+.fontSize18{
+    font-size: 18px;
+}
+
+.fontSize20{
+    font-size: 20px;
+}
+
+p{
+    line-height: 40px;
+}
+
+
+/* Colors */
+
+.lightGrey {
+    color: #F4F4F6;
+}
+
+
+
+
+/* Hero */
+
+.frontHero {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    /* border-bottom-left-radius: 700px; */
+}
+
+
+.frontHeroText{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+}
+
+/* Section 1 */
+.sectionOne{
+    background-color:#F4F4F6;
+}
+
+
+/* Section 5 */
+.sectionFive{
+    height: 70vh;
+    width: 100vw;
+    background-size: cover !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Section 8 */
+.contactForm {
+    height: auto;
+    width: 100vw;
+    background-size: cover !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    /* border-bottom-left-radius: 700px; */
+}
+
+
 body{
     margin: 0
 
