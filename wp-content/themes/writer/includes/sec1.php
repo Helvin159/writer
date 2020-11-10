@@ -9,27 +9,14 @@
         </div>
         
     </div>
-    <div class="row">
+    <div class="row px-5">
             <div class="col-4">
                 <div class="row">
                     <div class="col-2">
-                        <i class="far fa-edit fontSize20"></i>
+                        <i class="far fa-edit fontSize30  darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3>Blog</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="fas fa-chart-line fontSize20"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3>Strategy</h3>
+                        <h3><a href="<?php echo esc_url(site_url('/blog'))?>" class="darkPurple">Blog</a></h3>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -39,10 +26,10 @@
             <div class="col-4">
                 <div class="row">
                     <div class="col-2">
-                        <i class="far fa-building fontSize20"></i>
+                        <i class="fas fa-chart-line fontSize30  darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3>Structure</h3>
+                        <h3 ><a href="<?php echo esc_url(site_url('/strategy'))?>" class="darkPurple"> Strategy</a></h3>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -51,11 +38,11 @@
             </div>
             <div class="col-4">
                 <div class="row">
-                    <div class="col-2 fontSize20">
-                        <i class="fas fa-chart-bar"></i>
+                    <div class="col-2">
+                        <i class="far fa-building fontSize30  darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3>Content Strategy</h3>
+                        <h3 ><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Structure</a></h3>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -64,11 +51,11 @@
             </div>
             <div class="col-4">
                 <div class="row">
-                    <div class="col-2 fontSize20">
-                        <i class="fas fa-chart-bar"></i>
+                    <div class="col-2 ">
+                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3>Content Strategy</h3>
+                        <h3><a href="<?php echo esc_url(site_url('/content-strategy'))?>" class="darkPurple">Content Strategy</a></h3>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -77,11 +64,24 @@
             </div>
             <div class="col-4">
                 <div class="row">
-                    <div class="col-2 fontSize20">
-                        <i class="fas fa-chart-bar"></i>
+                    <div class="col-2 ">
+                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3>Content Strategy</h3>
+                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something Else</a></h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-2 ">
+                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
+                    </div>
+                    <div class="col-10 text-left">
+                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something ELSE</a></h3>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -90,24 +90,24 @@
             </div>
     </div>
     <div class="container text-center py-5">
-        <button class="btn btn-md btn-danger">See Previous Work</button>
+        <a class="btn btn-md btnPurple josefinLight fontSize18 lightGrey" href="<?php echo esc_url(site_url('/blog'))?>">See Previous Work</a>
     </div>
     <div class="row text-center py-5">
         <div class="col-3">
-            <h1>100</h1>
-            <h6>Consultations</h6>
+            <h1 class="purple display-3"><i>100</i></h1>
+            <h4>Consultations</h6>
         </div>
         <div class="col-3">
-            <h1>100</h1>
-            <h6>Consultations</h6>
+            <h1 class="purple display-3"><i>100</i></h1>
+            <h4>Consultations</h6>
         </div>
         <div class="col-3">
-            <h1>100</h1>
-            <h6>Consultations</h6>
+            <h1 class="purple display-3"><i>100</i></h1>
+            <h4>Consultations</h6>
         </div>
         <div class="col-3">
-            <h1>100</h1>
-            <h6>Consultations</h6>
+            <h1 class="purple display-3"><i>100</i></h1>
+            <h4>Consultations</h6>
         </div>
     </div>
 </div>

@@ -1,6 +1,9 @@
+  @import url("https://use.typekit.net/oac6dju.css");
 
 
+/* **************************** */
 /* Typography */
+/* **************************** */
 
 .fontSize15{
     font-size: 15px;
@@ -14,55 +17,247 @@
     font-size: 20px;
 }
 
+.fontSize22{
+    font-size: 22px;
+}
+
+.fontSize25{
+    font-size: 25px;
+}
+
+.fontSize28{
+    font-size: 28px;
+}
+
+.fontSize30{
+    font-size: 30px;
+}
+
+h1, h2, h3,h4,h5,h6{
+    font-family: linden-hill,
+    serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 p{
+    font-size: 19px;
+    font-family: adobe-garamond-pro,
+    serif;
+    font-weight: 400;
+    font-style: normal;
     line-height: 40px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
 
+a:hover{
+    
+    text-decoration: none;
+    transition: .17s ease-in;
+    color: #9064de;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+}
+
+button{
+    font-size: 19px !important;
+    font-family: josefin-sans,
+    sans-serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+
+button:hover{
+    color: #F4F4F6 !important;
+    transition: .17s ease-in !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
+    background-color: #7D71FA;
+}
+
+
+.lindenHillRegular {
+    font-family: linden-hill,
+        serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.lindenHillItalic {
+    font-family: linden-hill,
+        serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.garamondRegular{
+    font-family: adobe-garamond-pro,
+    serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.garamondBold{
+    font-family: adobe-garamond-pro,
+    serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.josefinLight{ 
+    font-family: josefin-sans,
+sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.josefinRegular{ 
+    font-family: josefin-sans,
+sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* **************************** */
 /* Colors */
+/* **************************** */
 
 .lightGrey {
     color: #F4F4F6;
 }
 
+.purple{
+    color:#9064de;
+}
 
+.darkPurple{
+    color:#7D71FA;
+}
 
+.pink{
+color: #c87Af5;
+}
 
-/* Hero */
+.hotPink{
+    color: #D264DE;
+}
+
+.lightPink{
+    color: #fa71cd;
+}
+
+/* **************************** */
+/* Buttons Colors*/
+/* **************************** */
+
+.btnPurple{
+    background-color: #9064de;
+}
+
+.btnDarkPurple{
+    background-color: #7D71FA;
+}
+
+.btnPink{
+    background-color: #c87Af5;
+
+}
+
+.btnHotPink{
+    background-color: #D264DE;
+}
+
+.btnLightPink{
+    background-color: #fa71cd;
+}
+
+/* **************************** */
+/* Navbar */
+/* **************************** */
+
+.headerNav {
+    position: absolute;
+    padding: 2.5% 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.01) !important;
+}
+
+.footerNav{
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
+/* **************************** */
+/* Hero & Banner */
+/* **************************** */
 
 .frontHero {
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+        url('../assets/img/8.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    /* border-bottom-left-radius: 700px; */
-}
 
+}
 
 .frontHeroText{
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 11%;
     color: white;
 }
 
+.banner{
+    height: 65vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+    url('../assets/img/8.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.bannerText{
+    position: absolute;
+    top: 40%;
+    left: 11%;
+    color: white;
+}
+
+/* **************************** */
 /* Section 1 */
+/* **************************** */
 .sectionOne{
     background-color:#F4F4F6;
 }
 
-
+/* **************************** */
 /* Section 5 */
+/* **************************** */
 .sectionFive{
     height: 70vh;
     width: 100vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1)),
+url('../assets/img/11.jpg') !important;
     background-size: cover !important;
     background-position: top center !important;
     background-repeat: no-repeat !important;
 }
 
+.sectionFive h1{
+    text-shadow: -2px 3px 8px rgba(0,0,0,0.8);
+}
+
+/* **************************** */
 /* Section 8 */
+/* **************************** */
 .contactForm {
     height: auto;
     width: 100vw;
@@ -73,7 +268,39 @@ p{
 }
 
 
+/* **************************** */
+/* Blog Posts */
+/* **************************** */
+.blogImg{
+    max-width: 200px;
+}
+
+
 body{
     margin: 0
+}
 
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 414px) {
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 414px) {
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
 }

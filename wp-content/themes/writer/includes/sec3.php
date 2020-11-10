@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="container py-5 text-center">
-        <h1>MAKE YOURR CONTENT A PRIORITY.</h1>
+        <h1>MAKE YOUR CONTENT A PRIORITY.</h1>
         <h1>I CERTAINLY WILL!</h1>
         <hr class="w-25">
     </div>
@@ -13,7 +13,7 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
             </p>
-            <button class="btn btn-lg btn-danger">Learn More</button>
+            <button class="btn btn-lg btnPurple lightGrey">Learn More</button>
         </div>
     </div>
 </div>

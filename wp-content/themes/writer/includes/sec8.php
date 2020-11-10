@@ -1,4 +1,4 @@
-<div class="container-fluid contactForm" style="background: url(<?php echo get_theme_file_uri('assets/img/10.jpg') ?>)">
+<div class="container-fluid contactForm py-5" style="background: url(<?php echo get_theme_file_uri('assets/img/10.jpg') ?>)">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -23,7 +23,7 @@
                         <textarea name="" id="" cols="30" rows="5"></textarea>
                     </label>
                     <br>
-                    <button class="btn btn-md btn-danger">Submit</button>
+                    <button class="btn btn-md btnPurple lightGrey">Submit</button>
                 </form>
             </div>
         </div>

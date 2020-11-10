@@ -11,7 +11,7 @@
             <div class="col-3"></div>
         </div>
         <div class="container">
-            <button class="btn btn-lg btn-danger">All Work</button>
+            <button class="btn btn-lg btnPurple lightGrey">All Work</button>
         </div>
     </div>
 </div>
