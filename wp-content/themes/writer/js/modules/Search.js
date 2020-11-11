@@ -8,13 +8,11 @@ class search{
     events(){
         const searchBtn = document.querySelector('.searchIcon');
         const exitBtn = document.querySelector('#closeOverlayBtn');
-        // const overlayOpen = false; 
         
             searchBtn.addEventListener('click', ()=>{
             const overlay = document.querySelector('.overlay');
             overlay.classList.add('openOverlay');
-            document.body.style.overflowY = 'hidden'
-            
+            document.body.style.overflowY = 'hidden';
             });
                     
             exitBtn.addEventListener('click', ()=>{
@@ -22,7 +20,15 @@ class search{
             overlayWhileOn.classList.remove('openOverlay')
             document.body.style.overflowY = 'scroll';
             });
-                    
+             
+            document.addEventListener('keyup', (e) => {
+                if (e.key == "Escape") {
+                    const overlayWhileOn = document.querySelector('.overlay');
+                    overlayWhileOn.classList.remove('openOverlay')
+                    document.body.style.overflowY = 'scroll';
+                }
+            })
+            
 
 
     }

@@ -5,7 +5,7 @@
   </button>
 
   <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto px-0">
+    <ul class="navbar-nav m-auto pr-5">
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/'))?>">Home <span class="sr-only">(current)</span></a>
       </li>

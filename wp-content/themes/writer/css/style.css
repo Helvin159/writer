@@ -298,7 +298,6 @@ url('../assets/img/11.jpg') !important;
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0;
     display: none;
     background-color: rgba(0,0,0,0.95);
     z-index: 2;
