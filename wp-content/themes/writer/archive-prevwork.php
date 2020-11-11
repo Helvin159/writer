@@ -14,7 +14,7 @@
                 the_post() ?>
                 <div class="col-6">
                     <div class="container my-4">
-                        <img src="<?php the_post_thumbnail_url()?>"  alt="Missing" class="img-fluid w-50">
+                        <img src="<?php the_post_thumbnail_url('MediumLandscape')?>"  alt="Missing" class="img-fluid w-50">
                     </div>
                     <h1><a href="<?php the_permalink() ?>"><?php the_title()?></a></h1>
                     <p>
