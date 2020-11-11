@@ -195,23 +195,7 @@ color: #c87Af5;
 /* Hero & Banner */
 /* **************************** */
 
-.frontHero {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
-        url('../assets/img/8.png') !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
 
-}
-
-.frontHeroText{
-    position: absolute;
-    top: 40%;
-    left: 11%;
-    color: white;
-}
 
 .banner{
     height: 65vh;
@@ -277,30 +261,113 @@ url('../assets/img/11.jpg') !important;
 
 
 body{
-    margin: 0
+    margin: 0;
+    overflow-x:hidden;
 }
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 414px) {
-   
+   .frontHero {
+       height: 100vh;
+       width: 100vw;
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+           url('../assets/img/8.png') !important;
+       background-size: cover !important;
+       background-position: center center !important;
+       background-repeat: no-repeat !important;
+
+   }
+
+   .frontHeroText {
+       position: absolute;
+       left: 0;
+       top: 40%;
+       color: white;
+   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 414px) {
-   
+   .frontHero {
+       height: 100vh;
+       width: 100vw;
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+           url('../assets/img/8.png') !important;
+       background-size: cover !important;
+       background-position: center center !important;
+       background-repeat: no-repeat !important;
+
+   }
+
+    .frontHeroText {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        color: white;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .frontHero {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+            url('../assets/img/8.png') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+
+    }
+
+    .frontHeroText {
+        position: absolute;
+        top: 40%;
+        left: 6%;
+        color: white;
+    }
    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-   
+   .frontHero {
+       height: 100vh;
+       width: 100vw;
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+           url('../assets/img/8.png') !important;
+       background-size: cover !important;
+       background-position: center center !important;
+       background-repeat: no-repeat !important;
+
+   }
+
+   .frontHeroText {
+       position: absolute;
+       top: 40%;
+       left: 2.5%;
+       color: white;
+   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .frontHero {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
+            url('../assets/img/8.png') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+
+    }
+
+    .frontHeroText {
+        position: absolute;
+        top: 40%;
+        left: 11%;
+        color: white;
+    }
    
 }
