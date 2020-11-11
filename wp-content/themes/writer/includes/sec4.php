@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="container py-5 text-center">
-        <h1>MAKE YOUR CONTENT A PRIORITY.</h1>
-        <h1>I CERTAINLY WILL!</h1>
+        <h1>HIGH QUALITY WORK!</h1>
+        <h2>GUARANTEED!</h2>
         <hr class="w-25">
     </div>
     <div class="row py-5">

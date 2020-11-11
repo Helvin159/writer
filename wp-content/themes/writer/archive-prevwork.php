@@ -1,6 +1,6 @@
 <?php 
     get_header();
-    require_once('includes/hero.php');
+    require_once('includes/banner.php');
 ?>
 <div class="container py-5">
     <h1 class="display-3"><?php echo substr(get_the_archive_title(),10)?></h1>
