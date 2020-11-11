@@ -18,10 +18,7 @@
     </ul>
     </div>
 
-
     <!-- ********************** Placeholder ******************** -->
       <a class="navbar-brand darkPurple pr-5" href="<?php echo esc_url(site_url('/'))?>">The Writer</a>
     <!-- ********************** Placeholder ******************** -->
-
-
 </nav>
