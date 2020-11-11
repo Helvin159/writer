@@ -7,6 +7,7 @@
   </a>
 </nav>
 <?php  
+    require_once('includes/overlay.php');
     wp_footer(); 
 ?>
 </body>

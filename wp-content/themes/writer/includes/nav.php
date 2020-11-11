@@ -1,24 +1,24 @@
 <nav class="headerNav josefinLight fontSize22 navbar navbar-expand-lg navbar-dark " >
-  <a class="navbar-brand darkPurple pl-5" href="<?php echo esc_url(site_url('/'))?>">Danielle</a>
+  <a class="navBrand navbar-brand darkPurple pl-5" href="<?php echo esc_url(site_url('/'))?>">Danielle</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto">
-      <li class="nav-item active">
+  <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto px-0">
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/'))?>">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
       </li>      
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">My Work</a>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/prevwork/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/prevwork'))?>">My Work</a>
       </li>
     </ul>
     </div>
 
     <!-- ********************** Placeholder ******************** -->
-      <a class="navbar-brand darkPurple pr-5" href="<?php echo esc_url(site_url('/'))?>">The Writer</a>
+      <i class="searchIcon fas fa-search fontSize30 px-5 lightGrey"></i>
     <!-- ********************** Placeholder ******************** -->
 </nav>

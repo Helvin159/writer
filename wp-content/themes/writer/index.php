@@ -4,8 +4,8 @@
 
 
 <div class="container-fluid py-5">
-     <div class="container py-5 text-center">
-         <h1 class="display-3">Blog </h1>
+     <div class="container py-5 text-left">
+         <h1>What I've been up to... </h1>
          <hr>
      </div>
      <div class="row m-auto ">

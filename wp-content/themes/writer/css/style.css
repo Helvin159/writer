@@ -174,6 +174,11 @@ color: #c87Af5;
     background-color: #fa71cd;
 }
 
+.btnOutlinePurple{
+    background-color: none;
+    border: .5px solid #9064de;
+}
+
 /* **************************** */
 /* Navbar */
 /* **************************** */
@@ -187,9 +192,34 @@ color: #c87Af5;
     background-color: rgba(0,0,0,0.01) !important;
 }
 
+.navBrand{
+    /* position: absolute; */
+    font-size: 35px;
+}
+
 .footerNav{
     background-color: rgba(0, 0, 0, 1) !important;
 }
+
+.searchIcon{
+    cursor: pointer;
+}
+
+.searchIcon:hover{
+    color: #9064de !important;
+    transition: .17s ease-in !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* **************************** */
+/* Hero & Banner */
+/* **************************** */
+
+.beforeLoad{
+    opacity: 0;
+}
+
+
 
 /* **************************** */
 /* Hero & Banner */
@@ -210,7 +240,7 @@ color: #c87Af5;
 
 .bannerText{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 11%;
     color: white;
 }
@@ -260,8 +290,62 @@ url('../assets/img/11.jpg') !important;
 }
 
 
+/* **************************** */
+/* Overlay */
+/* **************************** */
+.overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.95);
+    z-index: 2;
+
+}
+
+.openOverlay{
+    display: block;
+    overflow-y: scroll;
+}
+
+.overlaySearchBar{
+    position: absolute;
+    top:.25%;
+    left:1% ;
+    width: 90%;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+.searchExit{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-weight: 300;
+    font-size: 45px;
+    cursor: pointer;
+    z-index: -3;
+}
+
+
+.searchExit:hover {
+    color: #9064de !important;
+    transition: .17s ease-in !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
 body{
     margin: 0;
+    transition: 1s ease-in;
     overflow-x:hidden;
 }
 
@@ -321,10 +405,12 @@ body{
     }
 
     .frontHeroText {
+        transition: 2s ease-in;
         position: absolute;
         top: 40%;
         left: 6%;
         color: white;
+        
     }
    
 }
