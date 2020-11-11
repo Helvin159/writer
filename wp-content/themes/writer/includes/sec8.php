@@ -14,13 +14,13 @@
                     </label>
                     <br>
                     <label for="">
-                        <select name="" id="">
+                        <select name="" id="options">
                             <option value="">Something</option>
                         </select>
                     </label>
                     <br>                
                     <label for="">
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                        <textarea name="" id="contactComment" cols="30" rows="5"></textarea>
                     </label>
                     <br>
                     <button class="btn btn-md btnPurple lightGrey">Submit</button>

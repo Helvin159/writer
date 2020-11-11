@@ -256,6 +256,7 @@ color: #c87Af5;
 /* Section 5 */
 /* **************************** */
 .sectionFive{
+    position: relative;
     height: 70vh;
     width: 100vw;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1)),
@@ -265,9 +266,7 @@ url('../assets/img/11.jpg') !important;
     background-repeat: no-repeat !important;
 }
 
-.sectionFive h1{
-    text-shadow: -2px 3px 8px rgba(0,0,0,0.8);
-}
+
 
 /* **************************** */
 /* Section 8 */
@@ -350,7 +349,9 @@ body{
     overflow-x:hidden;
 }
 
+/* ******************************************** */
 /* Extra small devices (phones, 400px and down) */
+/* ******************************************** */
 @media only screen and (max-width: 414px) {
    .frontHero {
        height: 100vh;
@@ -369,9 +370,19 @@ body{
        top: 40%;
        color: white;
    }
+
+   .sectionFive h1 {
+       position: absolute;
+       top: 20%;
+       left: 0.5%;
+       right: 0.5%;
+       text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+   }
 }
 
+/* ******************************************** */
 /* Small devices (portrait tablets and large phones, 600px and up) */
+/* ******************************************** */
 @media only screen and (min-width: 414px) {
    .frontHero {
        height: 100vh;
@@ -390,9 +401,19 @@ body{
         left: 0;
         color: white;
     }
+
+    .sectionFive h1 {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        right:5%;
+        text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+    }
 }
 
+/* ******************************************** */
 /* Medium devices (landscape tablets, 768px and up) */
+/* ******************************************** */
 @media only screen and (min-width: 768px) {
     .frontHero {
         height: 100vh;
@@ -413,10 +434,20 @@ body{
         color: white;
         
     }
+
+    .sectionFive h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        right:5%;
+        text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+    }
    
 }
 
+/* ******************************************** */
 /* Large devices (laptops/desktops, 992px and up) */
+/* ******************************************** */
 @media only screen and (min-width: 992px) {
    .frontHero {
        height: 100vh;
@@ -435,9 +466,19 @@ body{
        left: 2.5%;
        color: white;
    }
+
+   .sectionFive h1 {
+       position: absolute;
+       top: 40%;
+       left: 5%;
+       right:5%;
+       text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+   }
 }
 
+/* ******************************************** */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* ******************************************** */
 @media only screen and (min-width: 1200px) {
     .frontHero {
         height: 100vh;
@@ -455,6 +496,12 @@ body{
         top: 40%;
         left: 11%;
         color: white;
+    }
+
+    .sectionFive h1 {
+        position: absolute;
+        top: 40%;
+        text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
     }
    
 }
