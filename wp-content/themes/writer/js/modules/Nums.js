@@ -5,7 +5,7 @@ class workNums{
 
     events(){
 
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/' || window.location.pathname === '/pages/writer/'){
             let hasRun = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
