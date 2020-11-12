@@ -4,19 +4,27 @@ class workNums{
     }
 
     events(){
-        let hasRun = false;
 
-        window.addEventListener('scroll', ()=>{
-            let windowPos = window.scrollY;
-            console.log(windowPos)
-            if(windowPos >= 1050 && hasRun != true){
-                this.consultations();
-                this.editorial();
-                this.webCont();
-                this.copyright();
-                return hasRun = true;
-            }
-        });
+        if(window.location.pathname === '/'){
+            let hasRun = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+                // console.log(windowPos)
+                if(windowPos >= 1050 && hasRun != true){
+                    this.consultations();
+                    this.editorial();
+                    this.webCont();
+                    this.copyright();
+                    return hasRun = true;
+                }
+            });
+
+
+
+        }
+
+
+        
     }
 
     // Methods

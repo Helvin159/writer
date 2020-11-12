@@ -238,12 +238,7 @@ color: #c87Af5;
 
 }
 
-.bannerText{
-    position: absolute;
-    top: 30%;
-    left: 11%;
-    color: white;
-}
+
 
 /* **************************** */
 /* Section 1 */
@@ -344,7 +339,6 @@ url('../assets/img/11.jpg') !important;
 
 body{
     margin: 0;
-    transition: 1s ease-in;
     overflow-x:hidden;
 }
 
@@ -377,6 +371,13 @@ body{
        right: 0.5%;
        text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
    }
+
+   .bannerText {
+       position: absolute;
+       top: 30%;
+       left:0;
+       color: white;
+   }
 }
 
 /* ******************************************** */
@@ -407,6 +408,13 @@ body{
         left: 5%;
         right:5%;
         text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .bannerText {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        color: white;
     }
 }
 
@@ -441,7 +449,14 @@ body{
         right:5%;
         text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
     }
-   
+
+    .bannerText {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        color: white;
+    }
+
 }
 
 /* ******************************************** */
@@ -473,6 +488,14 @@ body{
        right:5%;
        text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
    }
+   
+   
+   .bannerText {
+       position: absolute;
+       top: 30%;
+       left: 0;
+       color: white;
+   }
 }
 
 /* ******************************************** */
@@ -503,4 +526,11 @@ body{
         text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
     }
    
+.bannerText {
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    color: white;
+}
+
 }

@@ -8,11 +8,11 @@
          <h1>What I've been up to... </h1>
          <hr>
      </div>
-     <div class="row m-auto ">
+     <div class="row">
     <?php   
       while(have_posts()){
         the_post()?>
-    <div class="col-3 text-center p-5">
+    <div class="col-md-4 text-center p-5">
         <div class="container">
             <img class="img-fluid my-4 blogImg" src="<?php the_post_thumbnail_url()?>" alt="">
             <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
