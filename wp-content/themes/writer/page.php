@@ -1,6 +1,6 @@
 <?php 
     get_header();
-    require_once('includes/hero.php');
+    require_once('includes/banner.php');
 ?>
 <div class="container">
     <h1><?php the_title()?></h1>
