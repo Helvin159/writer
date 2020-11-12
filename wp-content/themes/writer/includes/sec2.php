@@ -20,13 +20,13 @@
             </div>
         </div>
     </div>
-    <div class="row bgLightGrey py-5">
-        <div class="col-md-6 p-5">
+    <div class="row  py-5 secTwoRowTwo">
+        <div class="col-md-6 p-5 unskew">
             <div class="container px-5">
                 <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/1.jpg')?>" alt="">
             </div>
         </div>
-        <div class="col-md-6 p-5">
+        <div class="col-md-6 p-5 unskew">
             <div class="container">
                 <h4>Reduce Bounce Rates</h4>
                 <p>

@@ -9,8 +9,9 @@
         </div>
         
     </div>
-    <div class="row px-5">
-            <div class="col-md-4">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2">
                         <i class="far fa-edit fontSize30  darkPurple"></i>
@@ -23,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2">
                         <i class="fas fa-chart-line fontSize30  darkPurple"></i>
@@ -36,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2">
                         <i class="far fa-building fontSize30  darkPurple"></i>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2 ">
                         <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
@@ -62,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2 ">
                         <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-4">
                 <div class="row">
                     <div class="col-2 ">
                         <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
@@ -89,6 +90,8 @@
                 </div>
             </div>
     </div>
+    </div>
+    
     <div id="workNumbers" class="container  text-center py-5">
         <a class="btn btn-md btnPurple josefinLight fontSize18 lightGrey" href="<?php echo esc_url(site_url('/blog'))?>">See Previous Work</a>
     </div>
