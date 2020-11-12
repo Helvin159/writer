@@ -9,6 +9,7 @@ class windowLoad{
             heroText.style.transition = '1s ease-in';
             heroText.classList.remove('beforeLoad');
         })
+
     }
 
 

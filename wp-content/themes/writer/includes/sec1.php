@@ -89,26 +89,26 @@
                 </div>
             </div>
     </div>
-    <div class="container text-center py-5">
+    <div id="workNumbers" class="container  text-center py-5">
         <a class="btn btn-md btnPurple josefinLight fontSize18 lightGrey" href="<?php echo esc_url(site_url('/blog'))?>">See Previous Work</a>
     </div>
     <div class="d-none d-sm-none d-md-block d-lg-block">
-            <div class="row text-center  py-5">
+        <div class="row text-center  py-5">
+            <div class="col-md-3">
+                <h1 id="consultationsNum" class="purple display-3"><i>0</i></h1>
+                <h4>Consultations</h6>
+            </div>
         <div class="col-md-3">
-            <h1 class="purple display-3"><i>100</i></h1>
-            <h4>Consultations</h6>
+            <h1 id="editorialNum" class="purple display-3"><i>0</i></h1>
+            <h4>Editorial Projects</h6>
         </div>
         <div class="col-md-3">
-            <h1 class="purple display-3"><i>100</i></h1>
-            <h4>Consultations</h6>
+            <h1 id="webContent" class="purple display-3"><i>0</i></h1>
+            <h4>Web Content Projects</h6>
         </div>
         <div class="col-md-3">
-            <h1 class="purple display-3"><i>100</i></h1>
-            <h4>Consultations</h6>
-        </div>
-        <div class="col-md-3">
-            <h1 class="purple display-3"><i>100</i></h1>
-            <h4>Consultations</h6>
+            <h1 id="copyrightProjects" class="purple display-3"><i>0</i></h1>
+            <h4>Copyright Projects</h6>
         </div>
     </div>
     </div>

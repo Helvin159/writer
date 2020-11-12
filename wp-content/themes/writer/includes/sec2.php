@@ -30,7 +30,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div class="container p-5">
+            <div class="container px-5">
                 <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/1.jpg')?>" alt="">
             </div>
         </div>
