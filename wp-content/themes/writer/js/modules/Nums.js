@@ -18,13 +18,7 @@ class workNums{
                     return hasRun = true;
                 }
             });
-
-
-
-        }
-
-
-        
+        }   
     }
 
     // Methods
