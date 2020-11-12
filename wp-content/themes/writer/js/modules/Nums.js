@@ -8,8 +8,8 @@ class workNums{
 
         window.addEventListener('scroll', ()=>{
             let windowPos = window.scrollY;
-            console.log(hasRun)
-            if(windowPos >= 1200 && hasRun != true){
+            console.log(windowPos)
+            if(windowPos >= 1050 && hasRun != true){
                 this.consultations();
                 this.editorial();
                 this.webCont();
@@ -20,7 +20,6 @@ class workNums{
     }
 
     // Methods
-
     editorial(){
         const interval = setInterval(()=>{
             const target = 99;
