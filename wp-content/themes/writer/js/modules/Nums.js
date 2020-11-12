@@ -30,7 +30,7 @@ class workNums{
             // console.log(num)
             if(num >= target){ clearInterval(interval) }
                 editorialNum.innerText++
-        }, 40)
+        }, 30)
     }
 
     consultations(){
@@ -54,7 +54,7 @@ class workNums{
             // console.log(num)
             if(num >= target){ clearInterval(interval) }
                 webContent.innerText++
-        }, 50)
+        }, 30)
     }
 
     copyright(){
