@@ -298,7 +298,8 @@ url('../assets/img/11.jpg') !important;
     width: 100%;
 }
 
-.formContainer input, .formContainer select{
+.formContainer input[type=text],
+.formContainer input[type=email] {
     border: none;
     width: 300px;
     height: 40px;;
@@ -309,6 +310,27 @@ url('../assets/img/11.jpg') !important;
     font-style: normal;
     font-size:18px
     
+}
+
+.formContainer input[type=date],
+.formContainer input[type=time]{
+    border: none;
+    width: 145px;
+    height: 40px;
+    /* margin-left:5px; */
+    border-radius: 5px;
+    font-family: adobe-garamond-pro,
+    serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:16px
+}
+
+.formContainer input[type=date]{
+    margin-right: 5px;
+}
+.formContainer input[type=time]{
+    margin-left: 5px;
 }
 
 .formContainer textarea{

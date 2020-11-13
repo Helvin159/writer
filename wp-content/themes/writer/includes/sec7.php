@@ -30,6 +30,9 @@
                     <?php   }    ?>
             
             </div>
+            <div class="container pt-5">
+                <a href="" class="btn btn-md btnPurple lightGrey josefinLight">MORE FROM MY BLOG</a>
+            </div>
         </div>
         
     </div>
