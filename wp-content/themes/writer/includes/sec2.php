@@ -8,7 +8,7 @@
         <div class="col-md-6 p-5">
             <div class="container">
                 <h4>Increse Conversion Rates</h4>
-                <p>
+                <p class="text-justify">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
                 </p>
                 <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
@@ -29,7 +29,7 @@
         <div class="col-md-6 p-5 unskew">
             <div class="container">
                 <h4>Reduce Bounce Rates</h4>
-                <p>
+                <p class="text-justify">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
                 </p>
                 <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
@@ -40,7 +40,7 @@
         <div class="col-md-6 p-5">
             <div class="container">
                 <h4>Drive More Traffic</h4>
-                <p>
+                <p class="text-justify">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
                 </p>
                 <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>

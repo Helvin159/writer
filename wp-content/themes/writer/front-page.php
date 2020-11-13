@@ -5,6 +5,7 @@
     require_once('includes/sec2.php');
     require_once('includes/sec5.php');
     require_once('includes/sec6.php');
+    require_once('includes/sec7.php');
     require_once('includes/sec8.php');
 
     get_footer();

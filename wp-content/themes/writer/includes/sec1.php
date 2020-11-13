@@ -3,7 +3,7 @@
         <h2>ONE TRICK PONY</h2>
         <hr class="w-25">
         <div class="container text-center px-5 d-none d-sm-none d-md-none d-lg-block">
-        <p>
+        <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quis sunt reprehenderit culpa dignissimos voluptas nulla. Recusandae distinctio repellendus ratione provident quis, fugit laboriosam eligendi nulla repudiandae sed corporis temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit dignissimos eos exercitationem molestiae quas odit fugiat non enim nobis? Aliquid, molestiae qui id beatae reprehenderit consequuntur magnam omnis aspernatur!
         </p>
         </div>
@@ -18,7 +18,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3><a href="<?php echo esc_url(site_url('/blog'))?>" class="darkPurple">Blog</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3 ><a href="<?php echo esc_url(site_url('/strategy'))?>" class="darkPurple"> Strategy</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3 ><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Structure</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3><a href="<?php echo esc_url(site_url('/content-strategy'))?>" class="darkPurple">Content Strategy</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something Else</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-10 text-left">
                         <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something ELSE</a></h3>
-                        <p>
+                        <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
                     </div>
