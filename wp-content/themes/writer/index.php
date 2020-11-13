@@ -2,7 +2,6 @@
     get_header();
     require_once('includes/banner.php'); ?>
 
-
 <div class="container-fluid pt-5">
      <div class="container pt-5 pb-2 text-left">
          <h1>What I've been up to... </h1>
