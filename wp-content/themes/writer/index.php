@@ -2,12 +2,11 @@
     get_header();
     require_once('includes/banner.php'); ?>
 
-<div class="container-fluid pt-5">
-     <div class="container pt-5 pb-2 text-left">
+     <div class="container pt-5 px-5 text-left">
          <h1>What I've been up to... </h1>
          <hr>
      </div>
-     <div class="container">
+     <div class="container py-5">
     <?php   
       while(have_posts()){
         the_post()?>
@@ -42,7 +41,6 @@
 
 <?php } ?>    
 </div>
-    </div>
 
 
 <?php get_footer();

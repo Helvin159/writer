@@ -6,7 +6,7 @@
         <div class="container prevWorkImgs">
             <?php if(get_field('image_one')){ ?>
                 <div class="container py-5">
-                    <h1>Some Images...</h1>
+                    <h1>Some Pictures...</h1>
                 </div>
             <div class="row">
                 <?php if(get_field('image_one')){ ?>
