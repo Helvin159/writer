@@ -1,5 +1,5 @@
 <div class="container-fluid ">
-    <div class="container py-5 text-center">
+    <div class="container pt-5 text-center">
         <h1>MAKE YOUR CONTENT A PRIORITY.</h1>
         <h2>I CERTAINLY WILL!</h2>
         <hr class="w-25">
