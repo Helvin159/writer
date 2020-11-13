@@ -69,7 +69,7 @@
                         <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something Else</a></h3>
+                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Editorial</a></h3>
                         <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -82,7 +82,7 @@
                         <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
                     </div>
                     <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Something ELSE</a></h3>
+                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Copyright</a></h3>
                         <p class="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
                         </p>
@@ -93,7 +93,7 @@
     </div>
     
     <div id="workNumbers" class="container  text-center py-5">
-        <a class="btn btn-md btnPurple josefinLight fontSize18 lightGrey" href="<?php echo esc_url(site_url('/blog'))?>">See Previous Work</a>
+        <a class="btn btn-md btnPurple josefinLight fontSize18 lightGrey" href="<?php echo esc_url(site_url('/prevwork'))?>">See Previous Work</a>
     </div>
     <div class="d-none d-sm-none d-md-block d-lg-block">
         <div class="row text-center  py-5">

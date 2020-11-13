@@ -10,7 +10,7 @@ class workNums{
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
                 // console.log(windowPos)
-                if(windowPos >= 1050 && hasRun != true){
+                if(windowPos >= 1250 && hasRun != true){
                     this.consultations();
                     this.editorial();
                     this.webCont();
