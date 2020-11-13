@@ -285,14 +285,6 @@ url('../assets/img/11.jpg') !important;
 /* **************************** */
 /* Section 8 */
 /* **************************** */
-.contactForm {
-    height: auto;
-    width: 100vw;
-    background-size: cover !important;
-    background-position: right center !important;
-    background-repeat: no-repeat !important;
-    /* border-bottom-left-radius: 700px; */
-}
 
 .formContainer form{
     width: 100%;
@@ -354,6 +346,51 @@ url('../assets/img/11.jpg') !important;
     max-width: 200px;
 }
 
+
+/* **************************** */
+/* Page */
+/* **************************** */
+.prevWorkImgs{
+    padding:5%;
+}
+
+.prevWorkImgs img{
+    /* max-width: 150px; */
+    transition: .42s ease-in;
+    max-height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+
+
+
+.prevWorkImgs img:hover{
+    transition: .42s ease-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.col2ImgSize img{
+    min-height: 120px ;
+    max-height: 120px;
+    /* min-width: 200; */
+}
+
+.col3ImgSize img{
+    max-height: 150px;
+
+}
+
+.col4ImgSize img{
+    max-height: 200px;
+
+}
+
+.col6ImgSize img {
+    height: 300px;
+    max-height: 300px;
+}
 
 /* **************************** */
 /* Overlay */
@@ -459,6 +496,14 @@ body{
         left: 1%;
        color: white;
    }
+   .contactForm {
+       height: auto;
+       width: 100vw;
+       background-size: cover !important;
+       background-position: center center !important;
+       background-repeat: no-repeat !important;
+       /* border-bottom-left-radius: 700px; */
+   }
 }
 
 /* ******************************************** */
@@ -507,6 +552,14 @@ body{
         right: 1%;
         left: 1%;
         color: white;
+    }
+    .contactForm {
+        height: auto;
+        width: 100vw;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        /* border-bottom-left-radius: 700px; */
     }
 }
 
@@ -558,6 +611,14 @@ body{
         left: 1%;
         color: white;
     }
+    .contactForm {
+        height: auto;
+        width: 100vw;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        /* border-bottom-left-radius: 700px; */
+    }
 
 }
 
@@ -608,6 +669,15 @@ body{
        left: 1%;
        color: white;
    }
+
+   .contactForm {
+       height: auto;
+       width: 100vw;
+       background-size: cover !important;
+       background-position: right center !important;
+       background-repeat: no-repeat !important;
+       /* border-bottom-left-radius: 700px; */
+   }
 }
 
 /* ******************************************** */
@@ -654,6 +724,15 @@ body{
         right: 1%;
         left: 1%;
         color: white;
+    }
+
+    .contactForm {
+        height: auto;
+        width: 100vw;
+        background-size: cover !important;
+        background-position: right center !important;
+        background-repeat: no-repeat !important;
+        /* border-bottom-left-radius: 700px; */
     }
 
 }
