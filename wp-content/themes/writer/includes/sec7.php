@@ -16,6 +16,7 @@
                     while($showPost->have_posts()){
                         $showPost->the_post() ?>
                         <div class="col-lg-4">
+                            
                             <div class="myCard my-3">
                         <img src="<?php the_post_thumbnail_url('HomeBlog')?>"  alt="Missing" class="img-fluid">
                     
