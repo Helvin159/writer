@@ -1,4 +1,8 @@
 
+
+<?php 
+  require_once('includes/rellinks.php')
+?>
 <!-- Just an image -->
 <nav class="footerNav navbar navbar-dark bg-dark">
   <a class="navbar-brand josefinLight fontSize28" href="#">
