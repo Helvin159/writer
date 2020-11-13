@@ -397,6 +397,27 @@ url('../assets/img/11.jpg') !important;
 }
 
 /* **************************** */
+/* Card */
+/* **************************** */
+
+.myCard img{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 270px;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+}
+
+.myCard{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: -2px 2px 15px rgba(0,0,0,0.2);
+}
+
+/* **************************** */
 /* Overlay */
 /* **************************** */
 .overlay{
@@ -448,6 +469,8 @@ url('../assets/img/11.jpg') !important;
     transition: .17s ease-in !important;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
 }
+
+
 
 body{
     margin: 0;

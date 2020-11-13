@@ -13,13 +13,25 @@
             while(have_posts()){
                 the_post() ?>
                 <div class="col-md-6">
-                    <div class="container my-4">
-                        <img src="<?php the_post_thumbnail_url('MediumLandscape')?>"  alt="Missing" class="img-fluid w-50">
+                    
+                    <div class="myCard my-3">
+                        <img src="<?php the_post_thumbnail_url('MediumLandscape')?>"  alt="Missing" class="img-fluid">
+                    
+                        <div class="container pt-4">
+                            <h5 class="purple josefinLight">My Work</h6>
+                            <h3><a href="<?php the_permalink() ?>"><?php the_title()?></a></h3>
+                            <p class="px-2">
+                                <?php 
+                                    echo    substr(get_the_excerpt(),0,150);                         
+                                ?>  
+                                <a href="<?php the_permalink()?>">[...]</a>
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="container pb-3">
+                            <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View Full Job</a>
+                        </div>
                     </div>
-                    <h1><a href="<?php the_permalink() ?>"><?php the_title()?></a></h1>
-                    <p>
-                        <?php the_excerpt()?>
-                    </p>
                 </div>
             <?php } ?>
 </div>
