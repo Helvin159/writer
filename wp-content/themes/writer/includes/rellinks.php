@@ -12,7 +12,7 @@
 
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo admin_url() ?>"> Admin </a></li>
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="tel:9295236682"> (888) 989 - 0928 </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="mailto:helvin@helvinrymer.com"> Danielle@Danielle.com </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="mailto:helvin@helvinrymer.com"> info@Danielle.com </a></li>
                 
             </ul>
         </div>
