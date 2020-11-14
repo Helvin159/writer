@@ -12,6 +12,6 @@
     </div>
 
     <div class="container text-left">
-        <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View Full Testimonial</a>
+        <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View Full Review</a>
     </div>
 </div>
