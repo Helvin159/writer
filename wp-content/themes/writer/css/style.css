@@ -52,14 +52,17 @@ p{
 a{
     color: black;
     text-decoration: none;
+    transition: .17s ease-in;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.015);
+
 }
 
 a:hover{
     
     text-decoration: none;
-    transition: .17s ease-in;
+    transition: .17s ease-out;
     color: #9064de;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+    text-shadow: 1px 1px 8px rgba(0,0,0,0,.10);
 }
 
 button{
@@ -424,6 +427,24 @@ url('../assets/img/11.jpg') !important;
     box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
 
 }
+
+.testimonialCard{
+    position: relative;
+    border-radius: 5px;
+    transition: .35s ease-in;
+}
+
+.testimonialCard img{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    max-height: 170px;
+    border-radius: 50%;
+}
+
 
 /* **************************** */
 /* Related Information */

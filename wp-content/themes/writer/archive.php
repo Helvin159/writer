@@ -6,14 +6,15 @@
     <h1 class="display-3"><?php echo substr(get_the_archive_title(),10)?></h1>
 </div>
 
+<hr class="w-75">
 
 <div class="container">
-<div class="row p-2">
+<div class="row py-5">
         <?php  
             while(have_posts()){
                 the_post() ?>
-                <div class="col-md-6">
-                    <?php require('includes/card.php')?>
+                <div class="col-md-4">
+                    <?php require('includes/smallcard.php')?>
                 </div>
             <?php } ?>
 </div>
