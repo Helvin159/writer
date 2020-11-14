@@ -16,14 +16,14 @@
         </div>
         <div class="col-md-6 p-5">
             <div class="container p-5">
-                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/1.jpg')?>" alt="">
+                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
             </div>
         </div>
     </div>
     <div class="row  py-5 secTwoRowTwo">
         <div class="col-md-6 p-5 unskew">
             <div class="container px-5">
-                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/1.jpg')?>" alt="">
+                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
             </div>
         </div>
         <div class="col-md-6 p-5 unskew">
@@ -48,7 +48,7 @@
         </div>
         <div class="col-md-6">
             <div class="container p-5">
-                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/1.jpg')?>" alt="">
+                <img class="img-fluid d-none d-sm-none d-md-block d-lg-block" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
             </div>
     </div>
         </div>
