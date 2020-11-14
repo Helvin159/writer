@@ -1,6 +1,6 @@
 <div class="container-fluid sectionSix">
     <div class="container py-5">
-        <h1>TESTIMONIALS &amp; FEATURED CLIENTS</h1>
+        <h1 class="text-center">TESTIMONIALS &amp; FEATURED CLIENTS</h1>
         <hr class="w-25">
         <div class="container">
             <div class="row">
