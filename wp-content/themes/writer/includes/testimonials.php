@@ -11,7 +11,7 @@
     </p>
     </div>
 
-    <div class="container ">
-        <a class="josefinLight fontSize15 btn btnDarkPurple lightGrey" href="<?php the_permalink()?>">View Full Testimonial</a>
+    <div class="container text-left">
+        <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View Full Testimonial</a>
     </div>
 </div>
