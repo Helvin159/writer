@@ -7,7 +7,7 @@
         <div class="row">
         <div class="col-md-4 links">
             <div class="container">
-                <h5 class="lightGrey">Contact</h3>
+                <h5 class="lightGrey">Contact</h5>
             </div>
             <ul>
 
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-4 links">
             <div class="container">
-                <h5 class="lightGrey">Pages</h3>
+                <h5 class="lightGrey">Pages</h5>
             </div>
             <ul>
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/blog')) ?>"> Blog </a></li>
@@ -30,13 +30,13 @@
         </div>
         <div class="col-md-4 links">
             <div class="container">
-                <h5 class="lightGrey">FAQ</h3>
+                <h5 class="lightGrey">FAQ</h5>
             </div>
             <ul>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Something </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Something </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Something </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Something </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/testimonial')); ?>"> Testimonials </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Policy </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Pricing </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Packages </a></li>
             </ul>
         </div>
     </div>
