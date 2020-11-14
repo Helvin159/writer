@@ -29,7 +29,7 @@
                         </div>
                         <hr>
                         <div class="container pb-3">
-                            <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View Full Job</a>
+                            <a class="josefinLight fontSize18" href="<?php the_permalink()?>">View More</a>
                         </div>
                     </div>
                 </div>
