@@ -480,6 +480,10 @@ url('../assets/img/11.jpg') !important;
     color: rgb(255, 255, 255) !important;
 }
 
+.hideCalendly{
+    display: none !important;
+}
+
 /* **************************** */
 /* Related Information */
 /* **************************** */
