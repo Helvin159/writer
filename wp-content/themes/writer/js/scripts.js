@@ -1,7 +1,7 @@
 import '../css/style.css'
-const url = window.location.href;
-const uri = window.location.pathname;
-console.log(uri)
+// const url = window.location.href;
+// const uri = window.location.pathname;
+// console.log(uri)
 
 
 // Modules

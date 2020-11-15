@@ -13,10 +13,15 @@
 
 
   <?php 
-  if($_SERVER['REQUEST_URI'] != '/book-a-meeting/'){
-    require_once('includes/calendlyBtn.php');
-  }
-    wp_footer(); 
+    require_once('includes/overlay.php');
+    
+    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/' and $_SERVER['REQUEST_URI'] != '/writer/book-a-meeting/'){
+      require_once('includes/calendlyBtn.php');
+    }
+
+    
+    wp_footer();
+
 ?>
 </body>
 </html>

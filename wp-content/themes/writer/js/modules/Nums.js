@@ -66,6 +66,7 @@ class workNums{
             if(num >= target){ clearInterval(interval) }
             copyrightProjects.innerText++
         }, 30)
+        
     }
 
 
