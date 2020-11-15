@@ -1,7 +1,7 @@
 
 
 <?php 
-  echo $_SERVER['REQUEST_URI'];
+  // echo $_SERVER['REQUEST_URI'];
   require_once('includes/rellinks.php')
 ?>
 <!-- Just an image -->
@@ -16,7 +16,7 @@
   <?php 
     require_once('includes/overlay.php');
     
-    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/' and $_SERVER['REQUEST_URI'] != '/writer/book-a-meeting/'){
+    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/' and $_SERVER['REQUEST_URI'] != '/pages//writer/book-a-meeting/'){
       require_once('includes/calendlyBtn.php');
     }
 
