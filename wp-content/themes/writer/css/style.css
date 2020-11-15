@@ -260,12 +260,27 @@ color: #c87Af5;
 /* **************************** */
 .sectionOne{
     background-color:#F4F4F6;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 
 /* **************************** */
 /* Section 2 */
 /* **************************** */
+.sectionTwo{
+    background-color: #FFFFFF;
+    padding: 0;
+}
+.sectionThree{
+    padding: 0;
+}
+
+.secTwoRowOne{
+    background-color: #FFFFFF;
+
+}
+
 .secTwoRowTwo{
     background-color: #F4F4F6;   
     transform: skewY(-3deg); 
@@ -273,6 +288,7 @@ color: #c87Af5;
 
 .unskew{
     transform: skewY(3deg);
+    
 }
 
 
@@ -576,6 +592,8 @@ url('../assets/img/11.jpg') !important;
 body{
     margin: 0;
     overflow-x:hidden;
+    background-color: #FFFFFF;
+
 }
 
 /* ******************************************** */

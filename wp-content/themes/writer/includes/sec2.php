@@ -1,13 +1,11 @@
-<div class="container-fluid ">
+<div class="container-fluid sectionTwo">
     <div class="container pt-5 text-center">
         <h1>MAKE YOUR CONTENT A PRIORITY.</h1>
         <h2>I CERTAINLY WILL!</h2>
         <hr class="w-25">
     </div>
-    <div class="row py-5">
+    <div class="row py-5 secTwoRowOne ">
                     <!-- d-none d-sm-none d-md-block d-lg-block -->
-
-
         <div class="col-md-6 p-5">
             <div class="container ">
                 <h4>Increse Conversion Rates</h4>
@@ -39,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="row pt-5">
+    <div class="row pt-5 secTwoRowThree">
         <div class="col-md-6 p-5">
             <div class="container">
                 <h4>Drive More Traffic</h4>
