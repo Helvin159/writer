@@ -221,12 +221,7 @@ color: #c87Af5;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
 }
 
-.navbar-collapse {
-    position: absolute;    
-    left: 0;
-    right: 0;
-    text-align: center;
-}
+
 
 /* **************************** */
 /* Hero & Banner */
@@ -806,6 +801,13 @@ body{
        background-repeat: no-repeat !important;
        /* border-bottom-left-radius: 700px; */
    }
+
+   .navbar-collapse {
+       position: absolute;
+       left: 0;
+       right: 0;
+       text-align: center;
+   }
 }
 
 /* ******************************************** */
@@ -862,6 +864,13 @@ body{
         background-position: right center !important;
         background-repeat: no-repeat !important;
         /* border-bottom-left-radius: 700px; */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
 }
