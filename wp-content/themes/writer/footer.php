@@ -1,6 +1,7 @@
 
 
 <?php 
+  echo $_SERVER['REQUEST_URI'];
   require_once('includes/rellinks.php')
 ?>
 <!-- Just an image -->
