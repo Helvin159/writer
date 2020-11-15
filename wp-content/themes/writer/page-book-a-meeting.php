@@ -14,8 +14,8 @@
             <img class="img-fluid" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="calendlyWidget p-1">
+    <div class="col-md-6 ">
+        <div class="calendlyWidget calendlyWidget p-1">
             <?php require_once('includes/calendly.php'); ?>
         </div>
     </div>    
