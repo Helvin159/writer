@@ -19,6 +19,6 @@
     </div>
 
     <!-- ********************** Placeholder ******************** -->
-      <i class="searchIcon fas fa-search fontSize30 px-5 lightGrey"></i>
+      <!-- <i class="searchIcon fas fa-search fontSize30 px-5 lightGrey"></i> -->
     <!-- ********************** Placeholder ******************** -->
 </nav>

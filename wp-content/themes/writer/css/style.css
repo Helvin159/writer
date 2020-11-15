@@ -77,7 +77,6 @@ button:hover{
     color: #F4F4F6 !important;
     transition: .17s ease-in !important;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
-    background-color: #7D71FA;
 }
 
 
@@ -220,6 +219,13 @@ color: #c87Af5;
     color: #9064de !important;
     transition: .17s ease-in !important;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.navbar-collapse {
+    position: absolute;    
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 /* **************************** */
@@ -485,6 +491,7 @@ url('../assets/img/11.jpg') !important;
     display: none !important;
 }
 
+
 /* **************************** */
 /* Related Information */
 /* **************************** */
@@ -588,6 +595,7 @@ body{
        right: 0;
        top: 40%;
        color: white;
+       text-align: center;
    }
 
    .sectionFive h1 {
@@ -644,6 +652,7 @@ body{
         left: 0;
         right: 0;
         color: white;
+        text-align: center;
     }
 
     .sectionFive h1 {
@@ -669,6 +678,7 @@ body{
         right: 0;
         left: 0;
         color: white;
+        text-align: center;
     }
     .contactForm {
         height: auto;
@@ -699,9 +709,10 @@ body{
         transition: 2s ease-in;
         position: absolute;
         top: 40%;
-        left: 6%;
-        right: 6%;
-        color: white;   
+        left:0;
+        right:0;
+        color: white; 
+        text-align: center;
     }
 
     .sectionFive h1 {
@@ -756,9 +767,10 @@ body{
    .frontHeroText {
        position: absolute;
        top: 40%;
-       left: 5%;
-       right: 5%;
+       left: 0;
+       right: 0;
        color: white;
+       text-align: center;
    }
 
    .sectionFive h1 {
@@ -817,6 +829,7 @@ body{
         left: 1%;
         right: 1%;
         color: white;
+        text-align: center;
     }
 
     .sectionFive h1 {
