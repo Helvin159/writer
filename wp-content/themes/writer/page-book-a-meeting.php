@@ -16,7 +16,7 @@
     </div>
     <div class="col-md-6 ">
         <div class="calendlyWidget calendlyWidget p-1">
-            <?php require_once('includes/calendly.php'); ?>
+            <?php //require_once('includes/calendly.php'); ?>
         </div>
     </div>    
 </div>
