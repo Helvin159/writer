@@ -10,8 +10,12 @@
     <!-- <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy"> -->
   </a>
 </nav>
-<?php  
-    require_once('includes/overlay.php');
+
+
+  <?php 
+  if($_SERVER['REQUEST_URI'] != '/book-a-meeting/'){
+    require_once('includes/calendlyBtn.php');
+  }
     wp_footer(); 
 ?>
 </body>

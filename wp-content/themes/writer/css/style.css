@@ -447,6 +447,40 @@ url('../assets/img/11.jpg') !important;
 
 
 /* **************************** */
+/* Calendly */
+/* **************************** */
+
+.calendlyWidget{
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+#page-region{
+    border-radius: 10px;
+}
+.bookingImg{
+    position: relative;
+    height: 100%;
+}
+.bookingImg img{
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    width: auto;
+    height: auto;
+}
+
+.calendly-badge-content{
+    font-family: josefin-sans,
+    sans-serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+    background: rgb(125, 113, 250, 0.7) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* **************************** */
 /* Related Information */
 /* **************************** */
     .links ul{
@@ -519,6 +553,7 @@ url('../assets/img/11.jpg') !important;
     transition: .17s ease-in !important;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
 }
+
 
 
 

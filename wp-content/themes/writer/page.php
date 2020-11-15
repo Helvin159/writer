@@ -10,7 +10,7 @@
     }
 ?>
 </div>
-
+<hr class="w-75">
 
 
 <div class="container py-5">
