@@ -9,14 +9,14 @@
 <hr class="w-75">
 
 <div class="container-fluid">
-    <div class="row  p-5 my-5">
+    <div class="row my-5">
     <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
         <div class="bookingImg">
             <img class="img-fluid" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
         </div>
     </div>
-    <div class="col-md-6 ">
-        <div class="calendlyWidget p-1">
+    <div class="col-md-6">
+        <div class="calendlyWidget">
             <?php require_once('includes/calendly.php'); ?>
         </div>
     </div>    

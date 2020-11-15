@@ -454,9 +454,10 @@ url('../assets/img/11.jpg') !important;
 /* Calendly */
 /* **************************** */
 
-.calendlyWidget{
-    border-radius: 10px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+/* .calendlyWidget, */
+#page-region {
+    border-radius: 20px !important;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3) !important;
 }
 
 #page-region{
