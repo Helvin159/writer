@@ -12,11 +12,11 @@
         the_post()?>
         <div class="myCard my-4">
             <div class="row">
-                <div class="col-3">
+                <div class="col-sm-3">
                     <img src="<?php the_post_thumbnail_url('SmallLandscape')?>"  alt="Missing" class="img-fluid">  
                 </div>
-                <div class="col-9 pt-4">
-                    <h3><a href="<?php the_permalink() ?>"><?php the_title()?></a></h3>
+                <div class="col-sm-9 pt-4">
+                    <h3 class="px-4"><a href="<?php the_permalink() ?>"><?php the_title()?></a></h3>
                     <p class="text-justify px-4">
                         <?php 
                             echo    substr(get_the_excerpt(),0,200);                         
