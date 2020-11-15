@@ -10,86 +10,36 @@
         
     </div>
     <div class="container">
-        <div class="row ">
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="far fa-edit fontSize30  darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/blog'))?>" class="darkPurple">Blog</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="fas fa-chart-line fontSize30  darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3 ><a href="<?php echo esc_url(site_url('/strategy'))?>" class="darkPurple"> Strategy</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="far fa-building fontSize30  darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3 ><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Structure</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
+        <div class="row">
+            <?php 
+            $showPages = new WP_Query(array(
+                'posts_per_page' => 6,
+                'post_type' => 'page',
+                'paged' => false,
+                'meta_key' => 'featured',
+                'meta_value' => 'yes',
+            ));
+
+            while($showPages->have_posts()){
+                $showPages->the_post() 
+                
+                ?>
+                <div class="row px-2"></div>
+                    <div class="col-md-4 my-4">
+                        <div class="row">
+                            <div class="col-2 pl-4 ">
+                                <i class=" fontSize30  darkPurple <?php echo get_field('icon')?>"></i>
+                            </div>
+                            <div class="col-10 text-left">
+                            <h3><a href="<?php the_permalink()?>" class="darkPurple"><?php the_title()?></a></h3>
+                            <p class="text-justify">
+                                <?php echo substr(get_the_excerpt(),0,170); echo '...'; ?>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2 ">
-                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/content-strategy'))?>" class="darkPurple">Content Strategy</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2 ">
-                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Editorial</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="row">
-                    <div class="col-2 ">
-                        <i class="fas fa-chart-bar fontSize30 darkPurple"></i>
-                    </div>
-                    <div class="col-10 text-left">
-                        <h3><a href="<?php echo esc_url(site_url('/structure'))?>" class="darkPurple">Copyright</a></h3>
-                        <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit eum tempore rem quasi iste deleniti sunt sint aut a placeat id facilis veritatis laudantium?
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </div>
+
+            <?php } ?>
     </div>
     
     <div id="workNumbers" class="container  text-center py-5">

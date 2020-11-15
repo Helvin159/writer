@@ -11,13 +11,13 @@
             <div class="row">
                 <?php if(get_field('image_one')){ ?>
                     <div class="prevWorkThumbnails <?php if(get_field('image_five')){
-                                    echo 'col-md-2 col2ImgSize';
+                                    echo 'col-md-2 my-2 col2ImgSize';
                                     }else if( get_field('image_four')){
-                                    echo 'col-md-3 col3ImgSize';
+                                    echo 'col-md-3 my-2 col3ImgSize';
                                     }else if (get_field('image_three')){
-                                    echo 'col-md-4 col4ImgSize';
+                                    echo 'col-md-4 my-2 col4ImgSize';
                                     }else if(get_field('image_one')) {
-                                    echo 'col-md-6 col6ImgSize';
+                                    echo 'col-md-6 my-2 col6ImgSize';
                                     } ?>">
                         <img class="img-fluid" src="<?php 
                         $value = get_field('image_one');
@@ -26,13 +26,13 @@
                 <?php } ?>
                 <?php if(get_field('image_two')){ ?>
                     <div class="prevWorkThumbnails <?php if(get_field('image_five')){
-                                    echo 'col-md-2 col2ImgSize';
+                                    echo 'col-md-2 my-2 col2ImgSize';
                                     }else if( get_field('image_four')){
-                                    echo 'col-md-3 col3ImgSize';
+                                    echo 'col-md-3 my-2 col3ImgSize';
                                     }else if (get_field('image_three')){
-                                    echo 'col-md-4 col4ImgSize';
+                                    echo 'col-md-4 my-2 col4ImgSize';
                                     }else if(get_field('image_one')) {
-                                    echo 'col-md-6 col6ImgSize';
+                                    echo 'col-md-6 my-2 col6ImgSize';
                                     } ?>">
                         <img class="img-fluid" src="<?php 
                         $value = get_field('image_two');
@@ -42,13 +42,13 @@
                         ?>
                 <?php if(get_field('image_three')){ ?>
                     <div class="prevWorkThumbnails <?php if(get_field('image_five')){
-                                    echo 'col-md-2 col2ImgSize';
+                                    echo 'col-md-2 my-2 col2ImgSize';
                                     }else if( get_field('image_four')){
-                                    echo 'col-md-3 col3ImgSize';
+                                    echo 'col-md-3 my-2 col3ImgSize';
                                     }else if (get_field('image_three')){
-                                    echo 'col-md-4 col4ImgSize';
+                                    echo 'col-md-4 my-2 col4ImgSize';
                                     }else if(get_field('image_one')) {
-                                    echo 'col-md-6 col6ImgSize';
+                                    echo 'col-md-6 my-2 col6ImgSize';
                                     } ?>">
                         <img class="img-fluid" src="<?php 
                         $value = get_field('image_three');
@@ -58,13 +58,13 @@
                         ?>                
                 <?php if(get_field('image_four')){ ?>
                     <div class="prevWorkThumbnails <?php if(get_field('image_five')){
-                                    echo 'col-md-2 col2ImgSize';
+                                    echo 'col-md-2 my-2 col2ImgSize';
                                     }else if( get_field('image_four')){
-                                    echo 'col-md-3 col3ImgSize';
+                                    echo 'col-md-3 my-2 col3ImgSize';
                                     }else if (get_field('image_three')){
-                                    echo 'col-md-4 col4ImgSize';
+                                    echo 'col-md-4 my-2 col4ImgSize';
                                     }else if(get_field('image_one')) {
-                                    echo 'col-md-6 col6ImgSize';
+                                    echo 'col-md-6 my-2 col6ImgSize';
                                     } ?>">
                         <img class="img-fluid" src="<?php 
                         $value = get_field('image_four');
@@ -74,13 +74,13 @@
                         ?>
                 <?php if(get_field('image_five')){ ?>
                     <div class="prevWorkThumbnails <?php if(get_field('image_five')){
-                                    echo 'col-md-2 col2ImgSize';
+                                    echo 'col-md-2 my-2 col2ImgSize';
                                     }else if( get_field('image_four')){
-                                    echo 'col-md-3 col3ImgSize';
+                                    echo 'col-md-3 my-2 col3ImgSize';
                                     }else if (get_field('image_three')){
-                                    echo 'col-md-4 col4ImgSize';
+                                    echo 'col-md-4 my-2 col4ImgSize';
                                     }else if(get_field('image_one')) {
-                                    echo 'col-md-6 col6ImgSize';
+                                    echo 'col-md-6 my-2 col6ImgSize';
                                     } ?>">
                         <img class="img-fluid" src="<?php 
                         $value = get_field('image_five');

@@ -382,6 +382,11 @@ url('../assets/img/11.jpg') !important;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 }
 
+.pdfThumbnails{
+    cursor: pointer;
+    font-size: 45px;
+}
+
 .col2ImgSize img{
     min-height: 120px ;
     max-height: 120px;

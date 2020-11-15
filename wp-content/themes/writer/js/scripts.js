@@ -7,7 +7,7 @@ import '../css/style.css'
 // Modules
 import load from './modules/Load';
 import hoverEvents from './modules/hoverEvents';
-// import search from './modules/Search';
+import Thumbnails from './modules/pagethumbnails';
 import workNums from './modules/Nums';
 // import Calendly from './modules/calendly';
 
@@ -15,7 +15,7 @@ import workNums from './modules/Nums';
 // Instantiate a new object using our modules / classes
 const windowLoaded = new load();
 const hoverEve = new hoverEvents();
-// const startSearch = new search();
+const thumbnails = new Thumbnails();
 const wNums = new workNums();
 // const calendly = new Calendly();
 
