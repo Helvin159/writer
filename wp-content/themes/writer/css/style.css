@@ -609,8 +609,8 @@ body{
    .bannerText {
        position: absolute;
        top: 30%;
-        /* right: 1%;
-        left: 1%; */
+        right: 0;
+        left: 0;
        color: white;
    }
    .contactForm {
@@ -666,8 +666,8 @@ body{
     .bannerText {
         position: absolute;
         top: 30%;
-        /* right: 1%;
-        left: 1%; */
+        right: 0;
+        left: 0;
         color: white;
     }
     .contactForm {
