@@ -16,7 +16,7 @@
                 </p>
 
                 <div class="container">
-                    <a href="" class="btn btnDarkPurple josefinLight lightGrey">View Samples</a>
+                    <a href="<?php echo esc_url(site_url('/prevwork'))?>" class="btn btnDarkPurple josefinLight lightGrey">View Samples</a>
                 </div>
             </div>
             <div class="col-sm-6 text-left ratingBars">
