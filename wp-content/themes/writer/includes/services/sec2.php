@@ -12,6 +12,7 @@
                             $showPages->the_post() ?>  
                             <div class="col-md-6 my-4">
                                 <?php 
+                                echo $_SERVER['DOCUMENT_ROOT'];
                                     require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/card.php');
                                 ?>
                             </div>
