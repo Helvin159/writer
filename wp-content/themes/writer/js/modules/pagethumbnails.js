@@ -27,7 +27,7 @@ class search{
             [...pdfThumbnail].forEach((pdfThumbnail)=>{
             pdfThumbnail.addEventListener('click', (e)=>{
             const imgSrc = e.target.getAttribute('src');
-            console.log(imgSrc);
+            // console.log(imgSrc);
             const imgContainer = document.querySelector('.overlayContent');
             const overlay = document.querySelector('.overlay');
             imgContainer.innerHTML = `<embed src="${imgSrc}" class="container-fluid" height="630px">`;
@@ -52,14 +52,7 @@ class search{
                     document.body.style.overflowY = 'scroll';
                 }
             })
-            
             };
-                    
-            
-            
-
-
     }
-
 
 export default search;

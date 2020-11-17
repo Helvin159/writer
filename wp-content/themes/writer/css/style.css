@@ -152,12 +152,29 @@ color: #c87Af5;
 }
 
 .bgLightGrey{
-    background-color: #F4F4F6;
+    background-color: rgba(244,244,246,1);
 }
 
 .bgBlack{
-    background-color: #000;
+    background-color: rgba(0,0,0,1);
 }
+
+.bgWhite{
+    background-color: rgba(255,255,255,1);
+}
+
+.bgPink {
+    background-color: #c87Af5;
+}
+
+.bgLightPink {
+    background-color: #fa71cd;
+}
+
+.bgPurple {
+    background-color: #9064de;
+}
+
 
 /* **************************** */
 /* Buttons Colors*/
@@ -246,7 +263,7 @@ color: #c87Af5;
     height: 65vh;
     width: 100vw;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)),
-    url('../assets/img/12.png') !important;
+    url('../assets/img/12.png');
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -373,6 +390,103 @@ url('../assets/img/11.jpg') !important;
     max-width: 200px;
 }
 
+
+/* **************************** */
+/* Services  Page */
+/* **************************** */
+.servicesSecThree {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, transparent 50%, rgba(255, 255, 255, 1) 50%),
+        url('../assets/img/b6.jpg') !important;
+    background-size: cover !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+
+
+/* **************************** */
+/* About  Page */
+/* **************************** */
+.secFourAbout {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background: linear-gradient(40deg, rgba(0, 0, 0, .55), rgba(0,0,0,.9), rgba(0, 0, 0, 1)),
+        url('../assets/img/b3.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.secFourAbout h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+}
+
+.secFourAbout a{
+    position: absolute;
+    top: 55%;
+    left: 42.5%;
+    right: 42.5%;
+    text-align: center;
+    
+}
+
+.aboutSecTwo {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-image:linear-gradient(to right, transparent 60%, rgba(255, 255, 255, 1) 50%),
+    url('../assets/img/b4.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+.aboutSecThree{
+    min-height: 70vh;
+}
+
+
+.ratingBar{
+    height: 10px;
+}
+
+.ratingBars ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jobsCompleted{
+    box-shadow: -2px -2px 8px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5%;
+    text-align: center;
+}
+
+.borderOne {
+    border-left: 3.5px solid #7D71FA;
+}
+.borderTwo {
+    border-left: 3.5px solid #fa71cd;
+}
+.borderThree {
+    border-left: 3.5px solid #c87Af5;
+}
+.borderFour {
+    border-left: 3.5px solid #D264DE;
+}
 
 /* **************************** */
 /* Page */
@@ -659,6 +773,26 @@ body{
     .navbar-toggler {
         margin: 0 2.5%;
     }
+
+    .serviceSecThreeQuote {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            line-height: 2.2;
+            background-color: rgba(255, 255, 255, 0.8)
+        }
+
+        .abSecTwoQuote {
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+            width: 95%;
+            line-height: 2.2;
+            background-color: rgba(255, 255, 255, 0.8);
+    }
 }
 
 /* ******************************************** */
@@ -726,6 +860,25 @@ body{
     .navbar-toggler{
         margin: 0 2.5%;
     }
+    .serviceSecThreeQuote {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 95%;
+        line-height: 2.2;
+        background-color:rgba(255,255,255,0.8)
+    }
+
+    .abSecTwoQuote {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        width: 65%;
+        line-height: 2.2;
+        background-color: rgba(255,255,255,0.8);
+    }
 }
 
 /* ******************************************** */
@@ -791,6 +944,24 @@ body{
     .navbar-toggler {
         margin: 0 2.5%;
     }
+
+    .serviceSecThreeQuote {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        width: 65%;
+        line-height: 2.2
+    }
+   .abSecTwoQuote {
+       position: absolute;
+       top: 30%;
+       left: 15%;
+       right: 0;
+       width: 35%;
+       line-height: 2.2;
+       background-color: rgba(255, 255, 255, 1);
+   }
 
 }
 
@@ -858,6 +1029,26 @@ body{
        right: 0;
        text-align: center;
    }
+
+   .serviceSecThreeQuote {
+       position: absolute;
+       top: 20%;
+       left: 0;
+       right: 0;
+       width: 65%;
+       line-height: 2.2
+   }
+
+   .abSecTwoQuote {
+       position: absolute;
+       top: 30%;
+       left: 30%;
+       right: 0;
+       width: 35%;
+       line-height: 2.2;
+       background-color:rgba(255,255,255,1);
+   }
+
 }
 
 /* ******************************************** */
@@ -922,5 +1113,25 @@ body{
         right: 0;
         text-align: center;
     }
+
+    .serviceSecThreeQuote {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        width: 35%;
+        line-height: 2.2
+    }
+
+    .abSecTwoQuote {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        right: 0;
+        width: 35%;
+        line-height: 2.2;
+        background-color: rgba(255,255,255,1);
+    }
+
 
 }

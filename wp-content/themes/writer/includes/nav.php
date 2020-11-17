@@ -9,14 +9,20 @@
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/'))?>">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
-      </li>      
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/about/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/about'))?>">About</a>
+      </li>
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/prevwork/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/prevwork'))?>">My Work</a>
       </li>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/services/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/services'))?>">Services</a>
+      </li>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
+      </li>
     </ul>
-    </div>
+  </div>
 
     <!-- ********************** Placeholder ******************** -->
       <!-- <i class="searchIcon fas fa-search fontSize30 px-5 lightGrey"></i> -->

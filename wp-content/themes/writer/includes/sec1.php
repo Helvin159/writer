@@ -24,7 +24,6 @@
                 $showPages->the_post() 
                 
                 ?>
-                <div class="row px-2"></div>
                     <div class="col-md-4 my-4">
                         <div class="row">
                             <div class="col-2 pl-4 ">

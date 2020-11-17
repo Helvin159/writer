@@ -1,0 +1,9 @@
+<?php 
+get_header();
+require_once('includes/banner.php');
+require_once('includes/about/aboutSec1.php');
+require_once('includes/about/aboutSec2.php');
+require_once('includes/about/aboutSec3.php');
+require_once('includes/about/aboutSec4.php');
+require_once('includes/Sec8.php');
+get_footer();

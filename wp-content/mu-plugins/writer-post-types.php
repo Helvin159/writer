@@ -46,6 +46,27 @@ function writer_post_types(){
     ),
     'menu_icon' => 'dashicons-thumbs-up'
   ));
+    
+    register_post_type('services', array(
+    
+    'capability_type' => 'services',
+    'map_meta_cap' => true,
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+    'rewrite' => array(
+      'slug' => 'services'
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'Services',
+      'add_new_item' => 'Add New Service',
+      'edit_item' => 'Edit Service',
+      'all_items' => 'All Services',
+      'singular_name' => 'Service',
+    ),
+    'menu_icon' => 'dashicons-performance'
+  ));
   
   
   
