@@ -18,6 +18,9 @@
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/services/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/services'))?>">Services</a>
       </li>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/contact/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/contact'))?>">Contact</a>
+      </li>
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
       </li>

@@ -410,6 +410,76 @@ url('../assets/img/11.jpg') !important;
 
 
 /* **************************** */
+/* Contact Page */
+/* **************************** */
+.contactDetails ul{
+    list-style-type: none;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.contactDetails li{
+    margin: 1% 0;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contactImg {
+    max-width: 450px;
+    box-shadow: -2px 2px 8px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.contactDetailsRow{
+    background:linear-gradient(to right, transparent 70%, rgba(255, 255, 255, 1) 50%),
+    rgba(244,244,246,1) !important;
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.contactDetailsRow p,
+.contactDetailsRow h1 {
+    text-align: left;
+}
+
+.contactPgFormContainer input{
+    width: 100%;
+    margin: 2% 0;
+    text-align: left;
+
+}
+.contactPgFormContainer label{
+    width: 20%;
+}
+
+.contactPgFormContainer textarea{
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+.contactPgFormContainer textarea,
+.contactPgFormContainer input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    padding: 5% 2%;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+/* **************************** */
 /* About  Page */
 /* **************************** */
 .secFourAbout {
