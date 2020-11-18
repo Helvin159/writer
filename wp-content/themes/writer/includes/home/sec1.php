@@ -1,10 +1,10 @@
 <div class="container-fluid sectionOne">
     <div class="container text-center p-5">
-        <h2>ONE TRICK PONY</h2>
+        <h2><?php echo strtoupper(get_field('top_title')); ?></h2>
         <hr class="w-25">
         <div class="container text-center px-5 d-none d-sm-none d-md-none d-lg-block">
         <p class="text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quis sunt reprehenderit culpa dignissimos voluptas nulla. Recusandae distinctio repellendus ratione provident quis, fugit laboriosam eligendi nulla repudiandae sed corporis temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit dignissimos eos exercitationem molestiae quas odit fugiat non enim nobis? Aliquid, molestiae qui id beatae reprehenderit consequuntur magnam omnis aspernatur!
+            <?php the_content(); ?>
         </p>
         </div>
         

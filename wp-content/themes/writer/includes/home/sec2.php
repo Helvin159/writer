@@ -8,11 +8,11 @@
                     <!-- d-none d-sm-none d-md-block d-lg-block -->
         <div class="col-md-6 p-5">
             <div class="container ">
-                <h4>Increse Conversion Rates</h4>
+                <h4><?php echo get_field('title_one')?></h4>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
+                    <?php echo get_field('first_message')?>
                 </p>
-                <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
+                <a href="<?php echo esc_url(site_url('/services'))?>" class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
             </div>
         </div>
         <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
@@ -29,22 +29,22 @@
         </div>
         <div class="col-md-6 p-5 unskew">
             <div class="container ">
-                <h4>Reduce Bounce Rates</h4>
+                <h4><?php echo get_field('title_two')?></h4>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
+                    <?php echo get_field('second_message')?>
                 </p>
-                <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
+                <a href="<?php echo esc_url(site_url('/services'))?>" class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
             </div>
         </div>
     </div>
     <div class="row pt-5 secTwoRowThree">
         <div class="col-md-6 p-5">
             <div class="container">
-                <h4>Drive More Traffic</h4>
+                <h4><?php echo get_field('title_three')?></h4>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo reprehenderit, sed distinctio commodi soluta! Provident odio exercitationem ipsam dolores adipisci iusto, qui quo dolor ea eaque totam praesentium placeat!
+                    <?php echo get_field('third_message')?>
                 </p>
-                <a class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
+                <a href="<?php echo esc_url(site_url('/services'))?>" class="btn btn-lg btnPurple lightGrey josefinLight">Learn More</a>
             </div> 
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block d-lg-block">
