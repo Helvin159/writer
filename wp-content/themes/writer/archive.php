@@ -17,7 +17,7 @@
                     <?php require('includes/smallcard.php')?>
                 </div>
             <?php } 
-            wp_reset_post_data();
+            wp_reset_postdata();
             ?>
 </div>
 </div>
