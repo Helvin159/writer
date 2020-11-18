@@ -1,7 +1,7 @@
 <div class="container-fluid py-5 contactPgFormContainer">
-    <div class="container text-left">
+    <div class="container text-center">
         <h1>Get In Touch</h1>
-        <hr class="w-25 ml-0 bgPurple">
+        <hr class="w-25 bgPurple">
     </div>
     <div class="container py-5">
         <form action="#" class=" formConContainer text-center">

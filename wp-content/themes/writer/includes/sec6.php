@@ -17,6 +17,7 @@
                             <?php require('testimonials.php') ?>
                         </div>
                     <?php }
+                    wp_reset_postdata();
                 ?>
             </div>
             <div class="container py-5 text-center">

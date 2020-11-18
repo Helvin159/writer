@@ -14,9 +14,9 @@ function writer (){
   } else{
       // CSS
     //   wp_enqueue_style('my-style', get_theme_file_uri('/css/styles.css'), null, '1.0', 'all');
-      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.d1f00236b7f2f8e1966a.css'), null, '1.0', 'all');
+      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.7bb5f26cbbc460363c7e.css'), null, '1.0', 'all');
       // wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.d1f00236b7f2f8e1966a.js'), NULL, '1.0', true);
+      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.7bb5f26cbbc460363c7e.js'), NULL, '1.0', true);
     }
 
 
@@ -51,7 +51,7 @@ add_action('after_setup_theme', 'writer_features');
 add_action('after_setup_theme', 'remove_admin_bar');
 
 function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
+if (!current_user_can('administrator') && !current_user_can('danielle') && !is_admin()) {
   show_admin_bar(false);
 }
 }

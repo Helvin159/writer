@@ -34,7 +34,7 @@
             </div>
             <ul>
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/testimonial')); ?>"> Testimonials </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Policy </a></li>
+                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/faq')) ?>"> FAQ </a></li>
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Pricing </a></li>
                 <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Packages </a></li>
             </ul>

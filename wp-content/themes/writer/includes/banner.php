@@ -1,4 +1,4 @@
-<div class="container-fluid banner">
+<div class="container-fluid banner" >
         <div class="container fadeIn beforeLoad bannerText text-center">
         <?php 
                 if($_SERVER['REQUEST_URI'] == '/blog/' or $_SERVER['REQUEST_URI'] == '/pages/writer/blog/'){ ?>

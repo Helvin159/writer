@@ -38,7 +38,9 @@
                     </div>
                 </div>
 
-            <?php } ?>
+            <?php } 
+            wp_reset_postdata();
+            ?>
     </div>
     
     <div id="workNumbers" class="container  text-center py-5">

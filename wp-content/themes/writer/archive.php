@@ -16,7 +16,9 @@
                 <div class="col-md-4">
                     <?php require('includes/smallcard.php')?>
                 </div>
-            <?php } ?>
+            <?php } 
+            wp_reset_post_data();
+            ?>
 </div>
 </div>
 

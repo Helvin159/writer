@@ -16,9 +16,12 @@
                     while($showPost->have_posts()){
                         $showPost->the_post() ?>
                         <div class="col-lg-4">
-                            <?php require('smallcard.php') ?>
+                            <?php 
+                            require('smallcard.php') ?>
                         </div>
-                    <?php   }    ?>
+                    <?php   }    
+                    wp_reset_postdata();
+                    ?>
             
             </div>
             <div class="container pt-5 text-center">

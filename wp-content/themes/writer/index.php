@@ -11,7 +11,9 @@
             <div class="col-sm-4">
                 <?php require('includes/card.php'); ?>
             </div>
-        <?php } ?>    
+        <?php } 
+        wp_reset_postdata();
+        ?>    
     </div>
 </div>
 

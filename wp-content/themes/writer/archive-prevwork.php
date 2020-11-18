@@ -30,7 +30,9 @@ require_once('includes/about/aboutSec2.php');
                 <div class="col-md-6">
                     <?php require('includes/card.php')?>
                 </div>
-            <?php } ?>
+            <?php } 
+            wp_reset_postdata();
+            ?>
     </div>
 </div>
 

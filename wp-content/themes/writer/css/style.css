@@ -185,7 +185,7 @@ color: #c87Af5;
 }
 
 .btnDarkPurple{
-    background-color: #7D71FA;
+    background-color: #7d71fa;
 }
 
 .btnPink{
@@ -392,10 +392,77 @@ url('../assets/img/11.jpg') !important;
 
 
 /* **************************** */
+/* FAQ  Page */
+/* **************************** */
+.faqQuestionRow{
+    background: linear-gradient(to right, transparent 40%, rgba(125, 113, 250, .92) 40%),
+    url('../assets/img/b7.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    /* filter: blur(8px);
+    -webkit-filter: blur(5px); */
+}
+
+.faqForm input {
+width: 100%;
+margin: 2% 0;
+border: none;
+border-radius: 5px;
+height: 40px;
+text-align: left;
+box-shadow:2px 2px 8px rgba(0,0,0,0.2)
+
+}
+
+.faqForm textarea{
+    /* width: 100%; */
+    margin: 2% 0;
+    border: none;
+    border-radius: 5px;
+    /* height: 40px; */
+    text-align: left;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.2)
+} 
+
+
+.faqMessage{
+        position: relative;
+        height: 70vh;
+        width: 100vw;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1)),
+        url('../assets/img/b8.jpg') !important;
+        background-size: cover !important;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+}
+
+.faqMessage h1 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.faqMessage a {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    right: 40%;
+    width: auto;
+    text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* **************************** */
 /* Services  Page */
 /* **************************** */
 .servicesSecThree {
-    position: relative;
+    position: relative ;
     height: 70vh;
     width: 100vw;
     background-image: linear-gradient(to left, transparent 50%, rgba(255, 255, 255, 1) 50%),
