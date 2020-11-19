@@ -12,8 +12,8 @@
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/about/' or $_SERVER['REQUEST_URI'] == '/pages/writer/about/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/about'))?>">About</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/prevwork/' or $_SERVER['REQUEST_URI'] == '/pages/writer/prevwork/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/prevwork'))?>">My Work</a>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/my-work/' or $_SERVER['REQUEST_URI'] == '/pages/writer/my-work/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/my-work'))?>">My Work</a>
       </li>
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/services/' or $_SERVER['REQUEST_URI'] == '/pages/writer/services/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/services'))?>">Services</a>
