@@ -4,7 +4,7 @@
                 if($_SERVER['REQUEST_URI'] == '/blog/' or $_SERVER['REQUEST_URI'] == '/pages/writer/blog/'){ ?>
                         <h1 class="display-3">Blog</h1>
                     <?php } else if($_SERVER['REQUEST_URI'] == '/prevwork/' or $_SERVER['REQUEST_URI'] == '/pages/writer/prevwork/'){ ?>
-                        <h1 class="display-3">My Work</h1>
+                        <h1 class="display-3">My Previous Work</h1>
                     <?php }else if($_SERVER['REQUEST_URI'] == '/services/' or $_SERVER['REQUEST_URI'] == '/pages/writer/services/'){ ?>
                         <h1 class="display-3">Services</h1>
                         <?php }else { ?>

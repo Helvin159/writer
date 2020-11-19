@@ -49,20 +49,24 @@
     <div class="d-none d-sm-none d-md-block d-lg-block">
         <div class="row text-center  py-5">
             <div class="col-md-3">
+                <input id="consultNum" type="hidden" value="<?php echo get_field('incrementing_number_1')?>">
                 <h1 id="consultationsNum" class="purple display-3"><i>0</i></h1>
-                <h4>Consultations</h6>
+                <h4><?php echo get_field('incrementing_number_1_title')?></h6>
             </div>
         <div class="col-md-3">
+            <input id="editNum" type="hidden" value="<?php echo get_field('incrementing_number_2')?>">
             <h1 id="editorialNum" class="purple display-3"><i>0</i></h1>
-            <h4>Editorial Projects</h6>
+            <h4><?php echo get_field('incrementing_number_2_title')?></h6>
         </div>
         <div class="col-md-3">
+            <input id="webContNum" type="hidden" value="<?php echo get_field('incrementing_number_3')?>">
             <h1 id="webContent" class="purple display-3"><i>0</i></h1>
-            <h4>Web Content Projects</h6>
+            <h4><?php echo get_field('incrementing_number_3_title')?></h6>
         </div>
         <div class="col-md-3">
+            <input id="copyrightnum" type="hidden" value="<?php echo get_field('incrementing_number_4')?>">
             <h1 id="copyrightProjects" class="purple display-3"><i>0</i></h1>
-            <h4>Copyright Projects</h6>
+            <h4><?php echo get_field('incrementing_number_4_title')?></h6>
         </div>
     </div>
     </div>

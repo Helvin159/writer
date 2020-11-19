@@ -7,7 +7,7 @@
     </div>
 <div class="row">
     <div class="col-sm-6">
-        <?php the_excerpt()?>
+        <p><?php the_content()?></p>
     </div>
     <div class="col-sm-6 ">
         <div class="row">

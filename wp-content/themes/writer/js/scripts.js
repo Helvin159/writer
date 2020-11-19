@@ -9,6 +9,7 @@ import load from './modules/Load';
 import hoverEvents from './modules/hoverEvents';
 import Thumbnails from './modules/pagethumbnails';
 import workNums from './modules/Nums';
+import Ratings from './modules/selfRatingBars';
 // import Calendly from './modules/calendly';
 
 
@@ -17,7 +18,12 @@ const windowLoaded = new load();
 const hoverEve = new hoverEvents();
 const thumbnails = new Thumbnails();
 const wNums = new workNums();
+const ratings = new Ratings();
 // const calendly = new Calendly();
+
+
+
+
 
 
 // Allow JS & CSS to display without page refresh

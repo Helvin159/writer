@@ -20,7 +20,7 @@ function writer_post_types(){
       'name' => 'Previous Work',
       'add_new_item' => 'Add New Previous Work',
       'edit_item' => 'Edit Previous Work',
-      'all_items' => 'All Previous Work',
+      'all_items' => 'All Previous Works',
       'singular_name' => 'Previous Work',
     ),
     'menu_icon' => 'dashicons-portfolio'

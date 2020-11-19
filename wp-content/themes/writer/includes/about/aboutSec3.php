@@ -5,14 +5,14 @@
     <hr class="w-25">
     <div class="container py-5">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis repudiandae explicabo ullam hic nemo assumenda ex labore. A aspernatur dolorum ut eaque laboriosam asperiores non autem labore esse tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iste, excepturi tenetur delectus natus ex iusto nemo, reiciendis deserunt voluptatibus modi eius porro dolorum? Tempore quibusdam fugit voluptatem eligendi recusandae?
+            <?php echo get_field('my_skills_text_area')?>
         </p>
     </div>
     <div class="container ">
         <div class="row px-5">
             <div class="col-sm-6 text-left">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure tempore doloremque ab quo ad? Accusantium nam facilis natus dicta quam reiciendis corporis, veritatis, eos est hic aliquam voluptas alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam doloremque ab illum? Earum similique eum fugiat expedita blanditiis temporibus asperiores perferendis!
+                    <?php echo get_field('my_skills_text_area_before_skills')?>
                 </p>
 
                 <div class="container">
@@ -22,20 +22,24 @@
             <div class="col-sm-6 text-left ratingBars">
                 <ul>
                     <li class="py-2">
-                        <h5><b>Copy Writing</b></h5>
-                        <div class="ratingBar bgPurple w-75"></div>
+                        <input id="ratingBarOne" type="hidden" value="<?php echo get_field('skill_rating_one')?>">
+                        <h5><b><?php echo get_field('skill_rating_one_title')?></b></h5>
+                        <div class="ratingBar bgPurple "></div>
                     </li>
                     <li class="py-2">
-                        <h5><b>Information Architecture</b></h5>
-                        <div class="ratingBar bgPurple w-50"></div>
+                        <input id="ratingBarTwo" type="hidden" value="<?php echo get_field('skill_rating_two')?>">
+                        <h5><b><?php echo get_field('skill_rating_two_title')?></b></h5>
+                        <div  class="ratingBar bgPurple "></div>
                     </li>
                     <li class="py-2">
-                        <h5><b>Content Strategy</b></h5>
-                        <div class="ratingBar bgPurple w-100"></div>
+                        <input id="ratingBarThree" type="hidden" value="<?php echo get_field('skill_rating_three')?>">
+                        <h5><b><?php echo get_field('skill_rating_three_title')?></b></h5>
+                        <div  class="ratingBar bgPurple "></div>
                     </li>
                     <li class="py-2">
-                        <h5><b>Product Reviews</b></h5>
-                        <div class="ratingBar bgPurple w-75"></div>
+                        <input id="ratingBarFour" type="hidden" value="<?php echo get_field('skill_rating_four')?>">
+                        <h5><b><?php echo get_field('skill_rating_four_title')?></b></h5>
+                        <div  class="ratingBar bgPurple "></div>
                     </li>
                 </ul>
                 

@@ -24,48 +24,53 @@ class workNums{
     // Methods
     editorial(){
         const interval = setInterval(()=>{
-            const target = 99;
             const editorialNum = document.querySelector('#editorialNum');
+            const editNum = document.querySelector('#editNum');
+            const target = editNum.value;
+            console.log(target)
             let num = editorialNum.innerText;
             // console.log(num)
-            if(num >= target){ clearInterval(interval) }
+            if(num >= parseInt(target) -1){ clearInterval(interval) }
                 editorialNum.innerText++
-        }, 30)
+        }, 20)
     }
 
     consultations(){
         const interval = setInterval(()=>{
-            const target = 149;
             const consultationsNum = document.querySelector('#consultationsNum');
+            const consultNum = document.querySelector('#consultNum');
+            const target = consultNum.value;
             let num = consultationsNum.innerText;
             // console.log(num)
-            if(num >= target){ 
+            if(num >= parseInt(target) -1){ 
                 clearInterval(interval) 
             }
                 consultationsNum.innerText++
-        }, 30)
+        }, 20)
     }
 
     webCont(){
         const interval = setInterval(()=>{
-            const target = 44;
             const webContent = document.querySelector('#webContent');
+            const webContentNum = document.querySelector('#webContNum');
+            const target = webContentNum.value;
             let num = webContent.innerText;
             // console.log(num)
-            if(num >= target){ clearInterval(interval) }
+            if(num >= parseInt(target) -1){ clearInterval(interval) }
                 webContent.innerText++
-        }, 30)
+        }, 20)
     }
 
     copyright(){
         const interval = setInterval(()=>{
-            const target = 119;
             const copyrightProjects = document.querySelector('#copyrightProjects');
+            const copyrightNum = document.querySelector('#copyrightnum');
+            const target = copyrightNum.value;
             let num = copyrightProjects.innerText;
             // console.log(num)
-            if(num >= target){ clearInterval(interval) }
+            if(num >= parseInt(target) -1){ clearInterval(interval) }
             copyrightProjects.innerText++
-        }, 30)
+        }, 20)
         
     }
 
