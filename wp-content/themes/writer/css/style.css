@@ -327,11 +327,17 @@ color: #c87Af5;
 #blackboardGraphBar3,
 #blackboardGraphBar4 {
     /* height: -200px; */
-    animation:barHeight 10s ease-in-out infinite alternate ;
-    transform-origin: center;
+    animation:barHeight 5s ease-in-out infinite  alternate;
+    transform-origin: bottom;
     transform-box: fill-box;
 
 }
+
+/* #blackboardGraphBar1{
+    animation:barOneHeight 5s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+} */
 
 
 #guyOnBoardLeftArm,
@@ -349,6 +355,9 @@ color: #c87Af5;
 }
 
 
+
+
+
 @keyframes cardLaptop{
     from{
         transform:translateY(120px) translateX(0);
@@ -363,7 +372,7 @@ color: #c87Af5;
     from{
         transform:scaleY(0);
     }to{
-        transform:scaleY(1);
+        transform:scaleY(1) ;
     }
 }
 
