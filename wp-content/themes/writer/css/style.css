@@ -545,6 +545,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 
+  
 
 /* **************************** */
 /* About  Page */
@@ -739,13 +740,67 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     position: relative;
     height: 100%;
 }
-.bookingImg img{
+.bookingImg svg{
     position: absolute;
     top: 20%;
     bottom: 20%;
     width: auto;
     height: auto;
 }
+
+/* Svg Animation */
+
+#bottom-right-bush,
+#top-right-bush {
+    animation: right-bushes 3s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#bottom-left-bush,
+#top-left-bush {
+    animation: left-bushes 3s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#globe{
+    animation: globe 15s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+
+@keyframes globe{
+    from {
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes right-bushes {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-10deg);
+    }
+}
+
+@keyframes left-bushes {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
 
 
 .calendly-badge-content{

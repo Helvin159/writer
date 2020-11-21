@@ -2,7 +2,7 @@
     <div class="row my-5">
     <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
         <div class="bookingImg">
-            <img class="img-fluid" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
+            <?php require_once('svg/1.php') ?>
         </div>
     </div>
     <div class="col-md-6">

@@ -17,14 +17,14 @@
         </div>
         <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
             <div class="container p-5">
-                <img class="img-fluid my-5" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
+                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
             </div>
         </div>
     </div>
     <div class="row  py-5 secTwoRowTwo">
         <div class="col-md-6 p-5 unskew d-none d-sm-none d-md-block d-lg-block">
             <div class="container px-5">
-                <img class="img-fluid my-5" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
+                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
             </div>
         </div>
         <div class="col-md-6 p-5 unskew">
@@ -49,7 +49,7 @@
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block d-lg-block">
             <div class="container p-5">
-                <img class="img-fluid my-5" src="<?php echo get_theme_file_uri('assets/img/a3.png')?>" alt="">
+                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
             </div>
     </div>
         </div>
