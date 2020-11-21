@@ -1047,6 +1047,7 @@ body{
         left: 0;
        color: white;
    }
+
    .contactForm {
        height: auto;
        width: 100vw;
@@ -1058,7 +1059,6 @@ body{
 
     .navbar-nav {
         padding: 0 2.5%;
-        z-index: 2;
     }
 
     .navbar-toggler {

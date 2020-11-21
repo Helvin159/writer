@@ -25,7 +25,7 @@ class workNums{
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
 
-                console.log(windowPos)
+                // console.log(windowPos)
                 if(windowPos >= 1300 && isOpen != true){
                     this.expandAboutSkills();
                     return isOpen = true;
@@ -40,7 +40,7 @@ class workNums{
             const editorialNum = document.querySelector('#editorialNum');
             const editNum = document.querySelector('#editNum');
             const target = editNum.value;
-            console.log(target)
+            // console.log(target)
             let num = editorialNum.innerText;
             // console.log(num)
             if(num >= parseInt(target) -1){ clearInterval(interval) }
