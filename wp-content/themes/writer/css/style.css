@@ -371,7 +371,7 @@ color: #c87Af5;
     from{
         transform:rotateZ(0deg);
     }to{
-        transform:rotateZ(7deg);
+        transform:rotateZ(5deg);
     }
 }
 
@@ -379,7 +379,7 @@ color: #c87Af5;
     from{
         transform:rotateZ(0deg);
     }to{
-        transform:rotateZ(-7deg);
+        transform:rotateZ(-5deg);
     }
 }
 
