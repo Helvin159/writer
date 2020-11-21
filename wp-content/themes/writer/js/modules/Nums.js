@@ -18,6 +18,19 @@ class workNums{
                     return hasRun = true;
                 }
             });
+        }  
+        
+        if(window.location.pathname === '/about/' || window.location.pathname === '/pages/writer/about/'){
+            let isOpen = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+
+                console.log(windowPos)
+                if(windowPos >= 1300 && isOpen != true){
+                    this.expandAboutSkills();
+                    return isOpen = true;
+                }
+            });
         }   
     }
 
@@ -72,6 +85,25 @@ class workNums{
             copyrightProjects.innerText++
         }, 20)
         
+    }
+
+    expandAboutSkills(){
+        const bars = document.querySelectorAll('.ratingBar');
+        bars[0].style.animation = 'gradient 2.5s ease-in';
+        bars[0].style.transformOrigin = 'left';
+        bars[0].style.opacity = '1';
+
+        bars[1].style.animation = 'gradient 2.5s ease-in';
+        bars[1].style.transformOrigin = 'left';
+        bars[1].style.opacity = '1';
+
+        bars[2].style.animation = 'gradient 2.5s ease-in';
+        bars[2].style.transformOrigin = 'left';
+        bars[2].style.opacity = '1';
+
+        bars[3].style.animation = 'gradient 2.5s ease-in';
+        bars[3].style.transformOrigin = 'left';
+        bars[3].style.opacity = '1';
     }
 
 

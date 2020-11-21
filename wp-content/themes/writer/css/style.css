@@ -363,7 +363,7 @@ color: #c87Af5;
         transform:translateY(120px) translateX(0);
 
     }to{
-        transform:  translateY(0px) translateX(15px) rotateZ(5deg);
+        transform:  translateY(0px) translateX(20px) rotateZ(2.5deg);
 
     }
 }
@@ -678,17 +678,32 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     min-height: 70vh;
 }
 
-
 .ratingBar{
-    height: 10px;
+    opacity: 0;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2), -1px 1px 6px rgba(0,0,0,0.2);
+    background: linear-gradient(90deg, rgba(245, 142, 166, .55), rgba(125, 113, 250, 1), rgba(125, 113, 250, 1));
+    /* animation: gradient 2s ease-in ; */
+    /* transform-origin: left; */
+    
 }
+
+@keyframes gradient{
+    from{
+
+        transform:scaleX(0)
+    }to{
+        transform: scaleX(1)
+    }
+}
+
 
 .ratingBars ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .jobsCompleted{
     box-shadow: -2px -2px 8px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.2);
     border-top-right-radius: 5px;
@@ -696,7 +711,6 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     padding: 5%;
     text-align: center;
 }
-
 .borderOne {
     border-left: 3.5px solid #7D71FA;
 }
@@ -725,9 +739,6 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
 }
-
-
-
 
 .prevWorkImgs img:hover{
     transition: .42s ease-out;
@@ -820,6 +831,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 #page-region{
     border-radius: 10px;
 }
+
 .bookingImg{
     position: relative;
     height: 100%;
@@ -832,8 +844,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     height: auto;
 }
 
-/* Svg Animation */
-
+/* SVG & Animations */
 #bottom-right-bush,
 #top-right-bush {
     animation: right-bushes 3s linear infinite alternate;

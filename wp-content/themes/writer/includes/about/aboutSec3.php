@@ -24,22 +24,22 @@
                     <li class="py-2">
                         <input id="ratingBarOne" type="hidden" value="<?php echo get_field('skill_rating_one')?>">
                         <h5><b><?php echo get_field('skill_rating_one_title')?></b></h5>
-                        <div class="ratingBar bgPurple "></div>
+                        <div class="ratingBar  "></div>
                     </li>
                     <li class="py-2">
                         <input id="ratingBarTwo" type="hidden" value="<?php echo get_field('skill_rating_two')?>">
                         <h5><b><?php echo get_field('skill_rating_two_title')?></b></h5>
-                        <div  class="ratingBar bgPurple "></div>
+                        <div  class="ratingBar  "></div>
                     </li>
                     <li class="py-2">
                         <input id="ratingBarThree" type="hidden" value="<?php echo get_field('skill_rating_three')?>">
                         <h5><b><?php echo get_field('skill_rating_three_title')?></b></h5>
-                        <div  class="ratingBar bgPurple "></div>
+                        <div  class="ratingBar  "></div>
                     </li>
                     <li class="py-2">
                         <input id="ratingBarFour" type="hidden" value="<?php echo get_field('skill_rating_four')?>">
                         <h5><b><?php echo get_field('skill_rating_four_title')?></b></h5>
-                        <div  class="ratingBar bgPurple "></div>
+                        <div  class="ratingBar  "></div>
                     </li>
                 </ul>
                 
