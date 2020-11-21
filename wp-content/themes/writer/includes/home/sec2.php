@@ -17,14 +17,27 @@
         </div>
         <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
             <div class="container p-5">
-                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
+                <?php 
+                if($_SERVER['SERVER_NAME'] == 'danielle.local'){
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                                    }else{
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
+                                    }
+                ?>
             </div>
         </div>
     </div>
     <div class="row  py-5 secTwoRowTwo">
         <div class="col-md-6 p-5 unskew d-none d-sm-none d-md-block d-lg-block">
             <div class="container px-5">
-                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
+                
+                <?php 
+                if($_SERVER['SERVER_NAME'] == 'danielle.local'){
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                                    }else{
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
+                                    }
+                 ?>
             </div>
         </div>
         <div class="col-md-6 p-5 unskew">
@@ -49,7 +62,13 @@
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block d-lg-block">
             <div class="container p-5">
-                <?php require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php') ?>
+                <?php 
+                    if($_SERVER['SERVER_NAME'] == 'danielle.local'){
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                                    }else{
+                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
+                                    }
+                ?>
             </div>
     </div>
         </div>
