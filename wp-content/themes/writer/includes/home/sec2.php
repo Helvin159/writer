@@ -19,10 +19,10 @@
             <div class="container p-5">
                 <?php 
                 if($_SERVER['SERVER_NAME'] == 'danielle.local'){
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
-                                    }else{
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
-                                    }
+                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                    }else{
+                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php');
+                    }
                 ?>
             </div>
         </div>
@@ -33,10 +33,10 @@
                 
                 <?php 
                 if($_SERVER['SERVER_NAME'] == 'danielle.local'){
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
-                                    }else{
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
-                                    }
+                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                    }else{
+                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php');
+                        
                  ?>
             </div>
         </div>
@@ -64,10 +64,10 @@
             <div class="container p-5">
                 <?php 
                     if($_SERVER['SERVER_NAME'] == 'danielle.local'){
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
-                                    }else{
-                                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php.php');
-                                    }
+                        require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/svg/1.php');
+                    }else{
+                        require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/svg/1.php');
+                    }
                 ?>
             </div>
     </div>
