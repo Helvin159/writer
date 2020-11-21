@@ -308,6 +308,81 @@ color: #c87Af5;
     
 }
 
+#card{ 
+    transform: translateY(120px);   
+    animation: cardLaptop 5s ease-in-out alternate infinite;
+    transform-origin: center;
+
+}
+
+#guyHoldingCard:hover,
+#guyWithoutArms:hover{
+    transition: 1s ease-in;
+    transform: scale(1.04);
+}
+
+
+#blackboardGraphBar1,
+#blackboardGraphBar2,
+#blackboardGraphBar3,
+#blackboardGraphBar4 {
+    /* height: -200px; */
+    animation:barHeight 10s ease-in-out infinite alternate ;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+
+#guyOnBoardLeftArm,
+#guyHoldingPieChartHeadVect {
+    animation:guysleftArms 2s ease-in alternate infinite;
+    transform-origin: translateY(-120px);
+    transform-box: fill-box;
+}
+
+#guyOnBoardRightArm,
+#guyOnBoardHead {
+    animation:guysrightArms 2s ease-in alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes cardLaptop{
+    from{
+        transform:translateY(120px) translateX(0);
+
+    }to{
+        transform:  translateY(0px) translateX(15px) rotateZ(5deg);
+
+    }
+}
+
+@keyframes barHeight{
+    from{
+        transform:scaleY(0);
+    }to{
+        transform:scaleY(1);
+    }
+}
+
+@keyframes guysleftArms{
+    from{
+        transform:rotateZ(0deg);
+    }to{
+        transform:rotateZ(7deg);
+    }
+}
+
+@keyframes guysrightArms{
+    from{
+        transform:rotateZ(0deg);
+    }to{
+        transform:rotateZ(-7deg);
+    }
+}
+
 
 
 /* **************************** */
@@ -800,6 +875,9 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
         transform: rotateZ(10deg);
     }
 }
+
+
+
 
 
 
