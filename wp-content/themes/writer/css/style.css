@@ -342,15 +342,15 @@ color: #c87Af5;
 
 #guyOnBoardLeftArm,
 #guyHoldingPieChartHeadVect {
-    animation:guysleftArms 2s ease-in alternate infinite;
-    transform-origin: translateY(-120px);
+    animation:guysleftArms 5s ease-in alternate infinite;
+    transform-origin: bottom;
     transform-box: fill-box;
 }
 
 #guyOnBoardRightArm,
 #guyOnBoardHead {
-    animation:guysrightArms 2s ease-in alternate infinite;
-    transform-origin: center;
+    animation:guysrightArms 5s ease-in alternate infinite;
+    transform-origin: bottom;
     transform-box: fill-box;
 }
 
