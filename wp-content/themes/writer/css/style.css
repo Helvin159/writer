@@ -1058,6 +1058,7 @@ body{
 
     .navbar-nav {
         padding: 0 2.5%;
+        z-index: 2;
     }
 
     .navbar-toggler {
