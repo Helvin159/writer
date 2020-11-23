@@ -9,12 +9,11 @@
     <hr class="w-25 bgLightPink">
     <div class="row py-5">
 
-    <?php 
+        <?php 
             $showChildren = new WP_Query(array(
                 'post_type' => 'page',
                 'post_per_page' => 3,
                 'post_parent' =>  $post->ID,
-                // 'child_of' => $post->ID,
                 'order' => 'ASC',
                 'orderby' => 'menu_order'
             ));
@@ -24,7 +23,7 @@
             while($showChildren->have_posts()){
                 $showChildren->the_post()?>
                 <div class="col-sm-4 text-center">
-                    <div class="container card <?php if($count == 0 or $count == 2) {echo 'bgLightGrey mt-5 py-3'; }else {echo 'mt-3 py-5';} ?>  ">
+                    <div class="container card <?php if($count == 0 or $count == 2) {echo 'bgLightGrey mt-5 py-3'; }else {echo 'mt-3 py-5';} ?>">
                         <h4><?php the_title()?></h4>  
                         <p>Starting at</p>
                         <h1>$<?php echo get_field('price_one')?></h1>
@@ -37,22 +36,21 @@
                             </ul>
                         </div>
                         <div class="container">
-                            <a href="<?php the_permalink()?>" class="btn btnDarkPurple josefinLight lightGrey">More Details</a>
+                            <a href="<?php the_permalink() ?>" class="btn btnDarkPurple josefinLight lightGrey">More Details</a>
                         </div>
                     </div>
                 </div>
-            <?php 
-            
-            $count++; 
+                <?php $count++; 
             }
                 wp_reset_postdata();
-    ?>
+            ?>
 
     </div>  
 </div>
 
 <?php 
-require('includes/about/aboutSec2.php');
-require('includes/Sec5.php');
-require('includes/sec8.php');
+require_once('includes/about/aboutSec2.php');
+require_once('includes/Sec5.php');
+require_once('includes/sec8.php');
 get_footer();
+?>
