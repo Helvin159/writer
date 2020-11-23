@@ -309,10 +309,7 @@ color: #c87Af5;
 }
 
 #card{ 
-    transform: translateY(120px);   
-    animation: cardLaptop 5s ease-in-out alternate infinite;
-    transform-origin: center;
-
+    transform: translateY(120px);
 }
 
 #guyHoldingCard:hover,
@@ -322,14 +319,15 @@ color: #c87Af5;
 }
 
 
-#blackboardGraphBar1,
-#blackboardGraphBar2,
+
+#blackboardGraphBar1,#blackboardGraphBar2,
 #blackboardGraphBar3,
 #blackboardGraphBar4 {
     /* height: -200px; */
-    animation:barHeight 5s ease-in-out infinite  alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
+    transform:scaleY(0);
+    /* animation:barHeight 5s ease-in-out infinite  alternate; */
+    /* transform-origin: bottom; */
+    /* transform-box: fill-box; */
 
 }
 

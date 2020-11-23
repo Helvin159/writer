@@ -8,7 +8,7 @@ import '../css/style.css'
 import load from './modules/Load';
 import hoverEvents from './modules/hoverEvents';
 import Thumbnails from './modules/pagethumbnails';
-import workNums from './modules/Nums';
+import scrollEvents from './modules/scrollEvents';
 import Ratings from './modules/selfRatingBars';
 // import Calendly from './modules/calendly';
 
@@ -17,7 +17,7 @@ import Ratings from './modules/selfRatingBars';
 const windowLoaded = new load();
 const hoverEve = new hoverEvents();
 const thumbnails = new Thumbnails();
-const wNums = new workNums();
+const scrollevents = new scrollEvents();
 const ratings = new Ratings();
 // const calendly = new Calendly();
 

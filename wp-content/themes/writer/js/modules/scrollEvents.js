@@ -1,4 +1,4 @@
-class workNums{
+class scrollEvents{
     constructor(){
         this.events()
     }
@@ -19,6 +19,32 @@ class workNums{
                 }
             });
         }  
+
+        if(window.location.pathname === '/' || window.location.pathname === '/pages/writer/'){
+            let isAnimated = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+
+                if(windowPos >= 2046 && isAnimated != true){
+                    // console.log(windowPos)
+                    this.animateLaptopSvg();
+                    return isAnimated = true;
+                }
+            });
+        }
+
+        if(window.location.pathname === '/' || window.location.pathname === '/pages/writer/'){
+            let animated = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+                    // console.log(windowPos)
+                if(windowPos >= 3232 && animated != true){
+                    // console.log(windowPos)
+                    this.animateBlackboard();
+                    return animated = true;
+                }
+            });
+        }
         
         if(window.location.pathname === '/about/' || window.location.pathname === '/pages/writer/about/'){
             let isOpen = false;
@@ -106,6 +132,44 @@ class workNums{
         bars[3].style.opacity = '1';
     }
 
+    animateLaptopSvg(){
+        const laptopSvg = document.querySelector('#card');
+        laptopSvg.style.animation = 'cardLaptop 2s ease-in-out';
+        laptopSvg.style.transformOrigin = 'center';
+
+        setTimeout(()=>{
+            laptopSvg.style.transform = 'translateY(0px) translateX(20px) rotateZ(2.5deg)'; 
+        }, 1999)
+    }
+
+    animateBlackboard(){
+        const barOne = document.querySelector('#blackboardGraphBar1');
+        const barTwo = document.querySelector('#blackboardGraphBar2');
+        const barThree = document.querySelector('#blackboardGraphBar3');
+        const barFour = document.querySelector('#blackboardGraphBar4');
+        // Animations
+        barOne.style.animation = 'barHeight 2s ease-in-out alternate';
+        barTwo.style.animation = 'barHeight 2s ease-in-out';
+        barThree.style.animation = 'barHeight 2s ease-in-out';
+        barFour.style.animation = 'barHeight 2s ease-in-out';
+        // Transform Origin
+        barOne.style.transformOrigin = 'bottom';
+        barTwo.style.transformOrigin = 'bottom';
+        barThree.style.transformOrigin = 'bottom';
+        barFour.style.transformOrigin = 'bottom';
+        // transform Box
+        barOne.style.transformBox = 'fill-box';
+        barTwo.style.transformBox = 'fill-box';
+        barThree.style.transformBox = 'fill-box';
+        barFour.style.transformBox = 'fill-box';
+        // Transform ScaleY to 1
+        setTimeout(()=>{
+            barOne.style.transform = 'scaleY(1)';
+        barTwo.style.transform = 'scaleY(1)';
+        barThree.style.transform = 'scaleY(1)';
+        barFour.style.transform = 'scaleY(1)';
+        }, 1999)
+    }
 
 }
-export default workNums;
+export default scrollEvents;
