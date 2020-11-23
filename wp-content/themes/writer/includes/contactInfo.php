@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row contactDetailsRow">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="container">
                 <h1>Contact Me</h1>
                 <p>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
         </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <img class="img-fluid contactImg" src="<?php echo get_field('extra_image')?>" alt="">
             </div>
     </div>
