@@ -1,4 +1,4 @@
-<svg viewBox="0 0 879 553" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 637 455" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_content_team_3epn 1" clip-path="url(#clip0)">
 <g id="laptop">
 <path id="Vector" d="M838.543 552.215H95.9091C89.305 552.215 82.9713 549.591 78.3015 544.921C73.6317 540.252 71.0082 533.918 71.0082 527.314C340.213 496.027 604.358 496.027 863.444 527.314C863.444 533.918 860.82 540.252 856.15 544.921C851.48 549.591 845.147 552.215 838.543 552.215Z" fill="#CCCCCC"/>
