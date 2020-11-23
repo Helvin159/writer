@@ -2,7 +2,7 @@
     <div class="row my-5">
     <div class="col-md-6 p-5 d-none d-sm-none d-md-block d-lg-block">
         <div class="bookingImg">
-            <?php require_once('svg/1.php') ?>
+            <?php require_once('svg/1.php'); ?>
         </div>
     </div>
     <div class="col-md-6">
