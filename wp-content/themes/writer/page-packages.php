@@ -50,7 +50,7 @@
 
 <?php 
 require_once('includes/about/aboutSec2.php');
-require_once('includes/Sec5.php');
-require_once('includes/sec8.php');
+// require_once('includes/Sec5.php');
+// require_once('includes/sec8.php');
 get_footer();
 ?>
