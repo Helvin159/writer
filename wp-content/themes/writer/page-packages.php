@@ -2,6 +2,8 @@
     get_header();
     require_once('includes/banner.php');
 ?>
+
+
 <div class="container py-5 text-center">
     <h1>Standard Packages</h1>
     <hr class="w-25 bgLightPink">
@@ -17,7 +19,7 @@
                 'orderby' => 'menu_order'
             ));
 
-            $count = 0;
+                $count = 0;
 
             while($showChildren->have_posts()){
                 $showChildren->the_post()?>
@@ -37,21 +39,19 @@
                         <div class="container">
                             <a href="<?php the_permalink()?>" class="btn btnDarkPurple josefinLight lightGrey">More Details</a>
                         </div>
-
                     </div>
                 </div>
-            <?php $count++; }
-            wp_reset_postdata();
+            <?php 
+            
+            $count++; 
+            }
+                wp_reset_postdata();
             ?>
-    </div>
-    
+    </div>  
 </div>
 
 <?php 
 require_once('includes/about/aboutSec2.php');
 require_once('includes/Sec5.php');
-?>
-
-<?php 
 require_once('includes/sec8.php');
 get_footer();
