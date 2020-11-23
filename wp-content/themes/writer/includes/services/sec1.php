@@ -30,7 +30,7 @@
                     ?>
                 </div>
                 <div class="container">
-                    <a href="<?php echo esc_url(site_url('/prevwork'))?>" class="btn btnDarkPurple fontSize18 josefinLight lightGrey">Full Portfolio</a>
+                    <a href="<?php echo esc_url(site_url('/packages'))?>" class="btn btnDarkPurple fontSize18 josefinLight lightGrey">View Pricing</a>
                 </div>
             </div>
         </div>
