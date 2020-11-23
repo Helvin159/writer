@@ -5,6 +5,7 @@
         <hr class="w-25">
     </div>
     <div class="row py-5 secTwoRowOne ">
+
                     <!-- d-none d-sm-none d-md-block d-lg-block -->
         <div class="col-md-6 p-5">
             <div class="container ">

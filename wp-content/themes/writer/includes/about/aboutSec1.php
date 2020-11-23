@@ -1,7 +1,7 @@
 <div class="container py-5 mt-5">
     <div class="container text-center">
         <h1>
-            I'm Danielle Rymer
+            <?php the_title()?>
             <hr class="w-25">
         </h1>
     </div>
