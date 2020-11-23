@@ -46,12 +46,13 @@
             $count++; 
             }
                 wp_reset_postdata();
-            ?>
+    ?>
+
     </div>  
 </div>
 
 <?php 
-require_once('includes/about/aboutSec2.php');
-require_once('includes/Sec5.php');
-require_once('includes/sec8.php');
+require('includes/about/aboutSec2.php');
+require('includes/Sec5.php');
+require('includes/sec8.php');
 get_footer();
