@@ -18,7 +18,7 @@
                             if($_SERVER['SERVER_NAME'] == 'danielle.local'){
                                 require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/testimonials.php');
                             }else{
-                                require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/testimonials.php');
+                                require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/testimonials.php');
                             } ?>
                         </div>
                     <?php }
