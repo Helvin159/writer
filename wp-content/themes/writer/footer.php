@@ -16,7 +16,7 @@
   <?php 
     require_once('includes/overlay.php');
     
-    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/' and $_SERVER['REQUEST_URI'] != '/pages/writer/book-a-meeting/'){
+    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/'){
       require_once('includes/calendlyBtn.php');
     }
 
