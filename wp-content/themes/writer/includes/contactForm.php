@@ -4,27 +4,27 @@
         <hr class="w-25 bgPurple">
     </div>
     <div class="container py-5">
-        <form action="#" class=" formConContainer text-center">
+        <form action="#" id="contactForm" class="formConContainer text-center">
             <label for="">
-                <input type="text" class="px-3" placeholder="First Name">
+                <input type="text" name="firstName" class="px-3" placeholder="First Name">
             </label>
             <label for="">
-                <input type="text" class="px-3" placeholder="Last Name">
-            </label>
-            <br>                
-            <label for="">
-                <input type="email" class="px-3" placeholder="Email">
-            </label>
-            <label for="">
-                <input type="url" name="" id="" placeholder="Web Url">
+                <input type="text" name="lastName" class="px-3" placeholder="Last Name">
             </label>
             <br>                
-                <textarea name="" id="" class="" cols="65" rows="5" placeholder="Message"></textarea>
+            <label for="">
+                <input type="email" name="email" id="emailInput" class="px-3" placeholder="Email">
+            </label>
+            <label for="">
+                <input type="url" name="webUrl" id="" placeholder="Web Url">
+            </label>
+            <br>                
+                <textarea name="messageOrComment" id="" class="" cols="65" rows="5" placeholder="Message"></textarea>
             <br>
             <div class="text-center py-2">
-                <a class="btn btn-md btnPurple lightGrey josefinLight fontSize18">Submit</a>
+                <input id="submit" type="submit" class="btn btn-md btnPurple lightGrey josefinLight fontSize18">
             </div>
                     
         </form>
     </div>
-</div>
+</div> 

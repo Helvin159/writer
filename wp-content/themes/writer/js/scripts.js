@@ -10,6 +10,7 @@ import hoverEvents from './modules/hoverEvents';
 import Thumbnails from './modules/pagethumbnails';
 import scrollEvents from './modules/scrollEvents';
 import Ratings from './modules/selfRatingBars';
+import NewMessage from './modules/newMessage';
 // import Calendly from './modules/calendly';
 
 
@@ -19,6 +20,7 @@ const hoverEve = new hoverEvents();
 const thumbnails = new Thumbnails();
 const scrollevents = new scrollEvents();
 const ratings = new Ratings();
+const newMessage = new NewMessage();
 // const calendly = new Calendly();
 
 

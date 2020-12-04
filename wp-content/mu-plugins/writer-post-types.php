@@ -67,6 +67,27 @@ function writer_post_types(){
     ),
     'menu_icon' => 'dashicons-performance'
   ));
+    
+    register_post_type('messages', array(
+    
+    'capability_type' => 'messages',
+    'map_meta_cap' => true,
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+    'rewrite' => array(
+      'slug' => 'messages'
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'messages',
+      'add_new_item' => 'Add New Message',
+      'edit_item' => 'Edit Messages',
+      'all_items' => 'All Messages',
+      'singular_name' => 'Message',
+    ),
+    'menu_icon' => 'dashicons-email-alt2'
+  ));
   
   
   

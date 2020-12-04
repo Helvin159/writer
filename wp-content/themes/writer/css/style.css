@@ -80,6 +80,22 @@ button:hover{
 }
 
 
+.prev, .page-numbers{
+    font-size: 25px;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.paginationLabels{
+    font-size: 25px;
+    font-family: josefin-sans,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .lindenHillRegular {
     font-family: linden-hill,
         serif;
