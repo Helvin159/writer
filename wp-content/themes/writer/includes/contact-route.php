@@ -40,7 +40,8 @@ function message($data){
   $email = sanitize_text_field($data['email']);
   $message = sanitize_text_field($data['comment']);
   
-  $contentMessage = "Here are the details: 
+  $contentMessage = "
+  Here are the details: 
   Name: $title 
   Email: $email
   Date Available: $date
@@ -63,9 +64,12 @@ function message($data){
       $subject = "New Email From DanielleRymer.com!";
       $subject2 = "Thank you!";
 
-      $message = "$title
-
-      $contentMessage" ;  
+      $message = '
+      <div style="background-color:#ffffff; padding:5%;text-align:center;">
+        <h1>'.$title.'</h1>
+        <p>'.$contentMessage.'<p>
+      </div>
+      ' ;  
 
       $message2 = "Thank you for your email. I'll be in touch as soon as possible."
       ."\n"."
