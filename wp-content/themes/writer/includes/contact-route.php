@@ -1,8 +1,19 @@
 <?php 
 
+// *****************************************
+// ************ Initiate Routes ************
+// *****************************************
+//  New Message With Sec8 Contact Form 
 add_action('rest_api_init', 'registerNewMessage');
 
-  // MAYBE
+//  New Testimonial Route 
+add_action('rest_api_init', 'registerNewTestimonial');
+
+
+// ********************************
+// ************ Routes ************
+// ********************************
+//  New Message With Sec8 Contact Form 
 function registerNewMessage(){
   register_rest_route('drymer/v1/', 'new-message', array(
     'methods' => 'POST',
@@ -10,105 +21,123 @@ function registerNewMessage(){
   ));
 }
 
+//  New Testimonial Route 
+function registerNewTestimonial(){
+  register_rest_route('drymer/v1/', 'new-testimonial', array(
+    'methods' => 'POST',
+    'callback' => 'test2',
+  ));
+}
+
+// ***************************************
+// ************ Route Actions ************
+// ***************************************
+// New Message includes/Sec8.php Contact Form
 function message($data){
   $title = sanitize_text_field($data['title']);
-  $fName = sanitize_text_field($data['firstName']);
-  $lName = sanitize_text_field($data['lastName']);
-  $phone = sanitize_text_field($data['phone']);
+  $date = sanitize_text_field($data['date']);
+  $time = sanitize_text_field($data['time']);
   $email = sanitize_text_field($data['email']);
-  $explanation = sanitize_text_field($data['explanation']);
-  $concept = sanitize_text_field($data['concept']);
-  $covid = sanitize_text_field($data['covid']);
+  $message = sanitize_text_field($data['comment']);
   
   $contentMessage = "Here are the details: 
   Name: $title 
-  Phone: $phone 
   Email: $email
+  Date Available: $date
+  Time Available: $time
+  
+  Message
+  $message";
 
-  Please share an explanation of the tattoo you'd like...
-  $explanation
+    wp_insert_post(array(
+      'post_type' => 'messages',
+      'post_status' => 'private',
+      'post_title' => $data['title'],
+      'post_content' => $contentMessage
+    ));
 
-  An idea or concept of your tattoo...
-  $concept
 
-  For safety reasons, have you been exposed to someone with COVID-19, or been   tested? 
-  $covid";
+    // Email
+      $to = "daniellelrymer@gmail.com, Helvin@HelvinRymer.com,danielle@daniellerymer.com"; // this is your Email address
+      $from = $email; // this is the sender's Email address
+      $subject = "New Email From DanielleRymer.com!";
+      $subject2 = "Thank you!";
 
-  $conditionOne = $email != null and $title != null;
+      $message = "$title
 
-  if($conditionOne){
-  wp_insert_post(array(
-    'post_type' => 'contact',
-    'post_status' => 'private',
-    'post_title' => $title,
-    'post_content' => $contentMessage,
-    'meta_input' => array(
-      'phone_number' =>  $phone,
-      'email' => $email,
-      'explanation' => $explanation,
-      'concept' => $concept,
-      'covid' => $covid
-    )
-  ));
+      $contentMessage" ;  
 
-  $to = "Melii@ManiacInk.com, Helvin@HelvinRymer.com,Meliisart03@gmail.com"; // this is your Email address
-  $from = $email; // this is the sender's Email address
-  $subject = "New Email From ManiacInk!";
-  $subject2 = "Thank you!";
+      $message2 = "Thank you for your email. I'll be in touch as soon as possible."
+      ."\n"."
+      Danielle Rymer
+      DanielleRymer.com
+      Danielle@DanielleRymer.com";
 
-  $message = "$title
+      $headers = "From:" . $from;
+      $headers2 = "From:" . $to;
 
-  $contentMessage" ;  
-
-  $message2 = "Thank you for your email. I'll be in touch as soon as possible."
-  ."\n"."
-  Melii
-  ManiacInk.com
-  Melii@ManiacInk.com";
-
-  $headers = "From:" . $from;
-  $headers2 = "From:" . $to;
-
-  mail($to,$subject,$message,$headers);
-  mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender 
-  }
+      mail($to,$subject,$message,$headers);
+      mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender 
 }
 
-function newMessage(){
-    // wp_insert_post(array(
-    //   'post_type' => 'contact',
-    //   'post_status' => 'publish',
-    //   'post_title' => 'New Contact',
-    //   'post_content' => 'Hi'
-    // ));
 
+// New Testimonial
+  function newTestimonial($data){
+    wp_insert_post(array(
+      'post_type' => 'testimonial',
+      'post_status' => 'publish',
+      'post_title' => 'New Testimonial',
+      'post_content' => 'New'
+    ));
 
-  // $name = $_POST['name'];
-  // $lastname = $_POST['lastname'];
-  // $phone = $_POST['pNumber'];
-  // $email = $_POST['email'];
-  // $comment = $_POST['comments'];
+    // Variables
+    $name = sanitize_text_field($data['title']);
+    $comment = sanitize_text_field($data['comment']);
 
-  $to = "Helvin@HelvinRymer.com"; // this is your Email address
-  $from = $email; // this is the sender's Email address
-  $subject = "Form submission";
-  $subject2 = "Thank you!";
-  $message = "$name sent the following details:
-  Email: $email
-  Phone: $phone
-  Comments: $comment";
+    // ***************************************
+    // Add email here
 
-  $message2 = "Thank you for your email. I'll be in touch as soon as possible."
-  ."\n"."
-  Melii
-  ManiacInk.com
-  Melii@ManiacInk.com";
+    // header('location:index.php');
+  }
 
-  $headers = "From:" . $from;
-  $headers2 = "From:" . $to;
+  // Email Code To Use
+  function email($adressOne, $addressTwo){
+      $to = "Melii@ManiacInk.com, Helvin@HelvinRymer.com,Meliisart03@gmail.com"; // this is your Email address
+      $from = $email; // this is the sender's Email address
+      $subject = "New Email From ManiacInk!";
+      $subject2 = "Thank you!";
 
-  mail($to,$subject,$message,$headers);
-  mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+      $message = "$title
 
-  // header('location:index.php');
+      $contentMessage" ;  
+
+      $message2 = "Thank you for your email. I'll be in touch as soon as possible."
+      ."\n"."
+      Melii
+      ManiacInk.com
+      Melii@ManiacInk.com";
+
+      $headers = "From:" . $from;
+      $headers2 = "From:" . $to;
+
+      mail($to,$subject,$message,$headers);
+      mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender 
+  }
+
+  function test(){
+    wp_insert_post(array(
+      'post_type' => 'messages',
+      'post_status' => 'private',
+      'post_title' => 'Hi',
+      'post_content' => 'hello',
+    ));
+  }
+  
+  function test2(){
+    wp_insert_post(array(
+      'post_type' => 'testimonial',
+      'post_status' => 'publish',
+      'post_title' => 'Hi',
+      'post_content' => 'hello',
+    ));
   }

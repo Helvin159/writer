@@ -1,25 +1,24 @@
+import axios from "axios";
 
 // Create new message
 class newMessage {
   constructor() {
+    axios.defaults.headers.common["X-WP-Nonce"] = writerData.nonce;
     this.events();
   }
  
   events() {
 
       const form = document.querySelector("#universalForm")
-      
       // console.log(form)
 
-
-
-    form.addEventListener('submit', this.messageDispatcher)
+      form.addEventListener('submit', this.messageDispatcher)
   }
 
   // methods
-  messageDispatcher(e) {
+  async messageDispatcher(e) {
       
-    // Prevent Default Form Behaviour
+      // Prevent Default Form Behaviour
       e.preventDefault();
 
       // Variables
@@ -29,55 +28,46 @@ class newMessage {
       const time = document.querySelector('[name="time"]')
       const message = document.querySelector('[name="messageOrComment"]')
       const submitBtn = document.querySelector('[name="submit]');
+      const plug =  axios.defaults.headers.common["X-WP-Nonce"] = writerData.nonce;
+
       
       // Prevent submit on empty form
-      if(fName.value != '' && email.value != '' && message.value != '' && date.value != '' ){
-          const newMessage = {
-              message: {
+      if(fName.value != '' && email.value != '' && message.value != '' && date.value != null  ){
+          var newMessage = {
+              // message: {
               title: fName.value,
               date: date.value,
               email: email.value,
               time: time.value,
-              message: message.value,
+              comment: message.value,
               status: "private",
+            // }
+          }
+
+          // console.log(newMessage);
+            
+          try{
+              
+            const response = await axios.post(writerData.root_url + '/wp-json/drymer/v1/new-message', newMessage)
+            console.log('response:', response)
+            if(response.status === 200){
+              setTimeout(()=>{
+                  document.querySelector('.formContainer').classList.add('d-none')
+                  document.querySelector('.thankyouMessage').classList.remove('d-none')
+              }, 1000)
             }
-          };
 
-          console.log(newMessage)
+          }
 
-        }else{
+          catch(e){
+            console.log('didnt work')
+            // console.log(e)
+          }
+
+      }
+      else{
           alert("Please fill all required fields")
-        }
-
-    
-        
-    // console.log(document.querySelector('[name="firstName"]').value);
-
-    // $.ajax({
-    //   beforeSend: (xhr) => {
-    //     xhr.setRequestHeader("X-WP-Nonce", writerData.nonce);
-    //   },
-    //   url: writerData.root_url + "/wp-json/drymer/v1/new-message",
-    //   type: "POST",
-    //   data: newMessage,
-    //   dataType: "json",
-    //   success: (response) => {
-    //     console.log(response);
-    //     console.log("good");
-    //     setTimeout(function () {
-    //     //   $("#contactForm").addClass("d-none");
-    //     //   $("#thankYou").removeClass("d-none");
-    //     }, 850);
-    //   },
-    //   error: (response) => {
-    //     console.log("sorry");
-    //     console.log(response);
-    //     setTimeout(function () {
-    //     //   $("#contactForm").addClass("d-none");
-    //     //   $("#thankYou").removeClass("d-none");
-    //     }, 850);
-    //   },
-    // });
+      }
   }
 }
 

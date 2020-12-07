@@ -80,7 +80,7 @@ function writer_post_types(){
     'public' => true,
     'has_archive' => true,
     'labels' => array(
-      'name' => 'messages',
+      'name' => 'Messages',
       'add_new_item' => 'Add New Message',
       'edit_item' => 'Edit Messages',
       'all_items' => 'All Messages',

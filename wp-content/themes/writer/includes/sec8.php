@@ -32,5 +32,9 @@
                 </div>
                 
             </div>
+            <div class="container py-5 d-none thankyouMessage">
+                <h1>Thank You!</h1>
+                <h3>I'll be in touch ASAP</h3>
+            </div>
     </div>
 </div>
