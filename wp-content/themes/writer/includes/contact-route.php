@@ -59,17 +59,15 @@ function message($data){
 
 
     // Email
-      $to = "daniellelrymer@gmail.com, Helvin@HelvinRymer.com,danielle@daniellerymer.com"; // this is your Email address
+      $to = "Helvin@HelvinRymer.com,danielle@daniellerymer.com"; // this is your Email address
       $from = $email; // this is the sender's Email address
       $subject = "New Email From DanielleRymer.com!";
       $subject2 = "Thank you!";
 
-      $message = '
-      <div style="background-color:#ffffff; padding:5%;text-align:center;">
-        <h1>'.$title.'</h1>
-        <p>'.$contentMessage.'<p>
-      </div>
-      ' ;  
+      $message = "
+      $title
+
+      $contentMessage" ;  
 
       $message2 = "Thank you for your email. I'll be in touch as soon as possible."
       ."\n"."
