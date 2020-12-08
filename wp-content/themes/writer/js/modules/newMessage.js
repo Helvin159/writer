@@ -10,9 +10,9 @@ class newMessage {
   events() {
 
       const form = document.querySelector("#universalForm")
-      // console.log(form)
-
-      form.addEventListener('submit', this.messageDispatcher)
+      if(form){
+        form.addEventListener('submit', this.messageDispatcher)
+      }
   }
 
   // methods
@@ -44,7 +44,8 @@ class newMessage {
             // }
           }
 
-          // console.log(newMessage);
+
+          console.log(newMessage);
             
           try{
               
@@ -66,7 +67,7 @@ class newMessage {
 
       }
       else if(fName.value === '' || email.value === '' || date.value === '' || message.value === ''){
-          
+        // Check If Input Is Empty, if Empty Show Error Message
         setTimeout(function(){
           if(fName.value === ''){
             document.querySelector('#noNameMsg').classList.remove('d-none')
@@ -80,6 +81,8 @@ class newMessage {
             })
           }
         },5)
+        
+        // Check If Input Is Empty, if Empty Show Error Message
         setTimeout(function(){
           if(email.value === ''){
             document.querySelector('#noEmailMsg').classList.remove('d-none')
@@ -93,6 +96,8 @@ class newMessage {
             })
           }
         },5)
+        
+        // Check If Input Is Empty, if Empty Show Error Message
         setTimeout(function(){
           if(date.value === ''){
             document.querySelector('#noDateMsg').classList.remove('d-none')
@@ -106,11 +111,13 @@ class newMessage {
             })
           }
         },5)
+
+        // Check If Input Is Empty, if Empty Show Error Message
         setTimeout(function(){
           if(message.value === ''){
             document.querySelector('#noMessageMsg').classList.remove('d-none')
             document.querySelector('#noMessageMsg').style.animation = 'opacityChange 0.4s ease-in ';
-            date.addEventListener('keydown', function(){
+            message.addEventListener('keydown', function(){
               setTimeout(function(){
                 if(message.value != ''){
                   document.querySelector('#noMessageMsg').classList.add('d-none')
@@ -121,6 +128,67 @@ class newMessage {
         },5)
       }
     }
+    
+  async testimonialDispatcher(e) {
+      
+      // Prevent Default Form Behaviour
+      e.preventDefault();
+
+      // Variables
+      const firstName = document.querySelector('[name="firstName"]')
+      const emailAddr = document.querySelector('[name="emailAddr"]')
+      const dateMet = document.querySelector('[name="dateMet"]')
+      const file = document.querySelector('[name="file"]')
+      const rating = document.querySelector('[name="rating"]')
+      const comment = document.querySelector('[name="comment"]')
+      const submitBtn = document.querySelector('[name="submit]');
+      const plug =  axios.defaults.headers.common["X-WP-Nonce"] = writerData.nonce;
+
+      // Prevent submit on empty form
+      if(firstName.value != '' && emailAddr.value != '' && comment.value != '' && dateMet.value != null  ){
+          var newTestimonial = {
+              // message: {
+              title: firstName.value,
+              date: dateMet.value,
+              email: emailAddr.value,
+              comment: comment.value,
+              status: "publish",
+            // }
+          }
+
+          // console.log(newMessage);
+            
+          try{
+            const response = await axios.post(writerData.root_url + '/wp-json/drymer/v1/new-testimonial', newTestimonial)
+            console.log('response:', response)
+            if(response.status === 200){
+              setTimeout(()=>{
+                
+              }, 300)
+            }
+          }catch(e){
+            console.log('didnt work')
+            // console.log(e)
+          }
+
+      }
+      else if(firstName.value === '' || emailAddr.value === '' || dateMet.value === '' || comment.value === ''){
+        // Check If Input Is Empty, if Empty Show Error Message
+        setTimeout(function(){
+          if(firstName.value === ''){
+            // document.querySelector('#noNameMsg').classList.remove('d-none')
+            // document.querySelector('#noNameMsg').style.animation = 'opacityChange 0.4s ease-in ';
+            // fName.addEventListener('keydown', function(){
+            //   setTimeout(function(){
+            //     if(fName.value != ''){
+            //       document.querySelector('#noNameMsg').classList.add('d-none')
+            //   }
+            //   }, 1)
+            // })
+          }
+        },5)
+      }
+  }
 }
 
 export default newMessage;
