@@ -54,7 +54,7 @@ class newMessage {
               setTimeout(()=>{
                   document.querySelector('.formContainer').classList.add('d-none')
                   document.querySelector('.thankyouMessage').classList.remove('d-none')
-              }, 1000)
+              }, 300)
             }
 
           }
@@ -65,10 +65,62 @@ class newMessage {
           }
 
       }
-      else{
-          alert("Please fill all required fields")
+      else if(fName.value === '' || email.value === '' || date.value === '' || message.value === ''){
+          
+        setTimeout(function(){
+          if(fName.value === ''){
+            document.querySelector('#noNameMsg').classList.remove('d-none')
+            document.querySelector('#noNameMsg').style.animation = 'opacityChange 0.4s ease-in ';
+            fName.addEventListener('keydown', function(){
+              setTimeout(function(){
+                if(fName.value != ''){
+                  document.querySelector('#noNameMsg').classList.add('d-none')
+              }
+              }, 1)
+            })
+          }
+        },5)
+        setTimeout(function(){
+          if(email.value === ''){
+            document.querySelector('#noEmailMsg').classList.remove('d-none')
+            document.querySelector('#noEmailMsg').style.animation = 'opacityChange 0.4s ease-in ';
+            email.addEventListener('keydown', function(){
+              setTimeout(function(){
+                if(email.value != ''){
+                  document.querySelector('#noEmailMsg').classList.add('d-none')
+              }
+              }, 1)
+            })
+          }
+        },5)
+        setTimeout(function(){
+          if(date.value === ''){
+            document.querySelector('#noDateMsg').classList.remove('d-none')
+            document.querySelector('#noDateMsg').style.animation = 'opacityChange 0.4s ease-in ';
+            date.addEventListener('keydown', function(){
+              setTimeout(function(){
+                if(date.value != ''){
+                  document.querySelector('#noDateMsg').classList.add('d-none')
+              }
+              }, 1)
+            })
+          }
+        },5)
+        setTimeout(function(){
+          if(message.value === ''){
+            document.querySelector('#noMessageMsg').classList.remove('d-none')
+            document.querySelector('#noMessageMsg').style.animation = 'opacityChange 0.4s ease-in ';
+            date.addEventListener('keydown', function(){
+              setTimeout(function(){
+                if(message.value != ''){
+                  document.querySelector('#noMessageMsg').classList.add('d-none')
+              }
+              }, 1)
+            })
+          }
+        },5)
       }
-  }
+    }
 }
 
 export default newMessage;

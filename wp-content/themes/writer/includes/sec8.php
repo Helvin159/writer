@@ -10,18 +10,22 @@
                     <form action="#" id="universalForm">
                     <label for="">
                         <input type="text" name="fName" class="px-3" placeholder="Name">
+                        <p id="noNameMsg" class="p-0 m-0 d-none red fontSize15 errMessages">Please enter a name.</p>
                     </label>
                     <br>                
                     <label for="">
                         <input type="email" name="email" id="univEmail" class="px-3" placeholder="Email">
+                        <p id="noEmailMsg" class="p-0 m-0 d-none red fontSize15 errMessages">Please enter an email address.</p>
                     </label>
                     <br>
                     <label for="">
                     <input type="date" name="date" id=""><input name="time" type="time">
+                    <p id="noDateMsg" class="p-0 m-0 d-none red fontSize15 errMessages">Please enter a date.</p>
                     </label>
                     <br>                
                     <label for="">
                         <textarea name="messageOrComment" id="contactComment" class="px-2" cols="30" rows="5" placeholder="Message"></textarea>
+                        <p id="noMessageMsg" class="p-0 m-0 d-none red fontSize15 errMessages">Please enter a message.</p>
                     </label>
                     <br>
                     <div class="text-left py-2">

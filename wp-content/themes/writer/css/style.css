@@ -80,6 +80,16 @@ button:hover{
 }
 
 
+@keyframes opacityChange{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
 .prev, .page-numbers{
     font-size: 25px;
     font-family: josefin-sans,
@@ -165,6 +175,10 @@ color: #c87Af5;
 
 .lightPink{
     color: #fa71cd;
+}
+
+.red{
+    color: red;
 }
 
 .bgLightGrey{
