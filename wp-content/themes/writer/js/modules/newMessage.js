@@ -54,15 +54,18 @@ class newMessage {
             if(response.status === 200){
               setTimeout(()=>{
                   document.querySelector('.formContainer').classList.add('d-none')
-                  document.querySelector('.thankyouMessage').classList.remove('d-none')
+                  document.querySelector('.thankyouMessage').classList.remove('d-none')                  
               }, 300)
             }
 
-          }
-
-          catch(e){
-            console.log('didnt work')
-            // console.log(e)
+          }catch(e){
+            document.querySelector('#sec8ErrorMsg').classList.remove('d-none')
+            document.querySelector('#sec8ErrorMsg').style.animation = 'opacityChange 0.4s ease-in';
+            fName.value = '';
+            date.value = '';
+            message.value = '';
+            time.value = '';
+            email.value = '';
           }
 
       }

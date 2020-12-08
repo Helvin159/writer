@@ -1,7 +1,7 @@
 <div class="container-fluid sectionTwo">
     <div class="container pt-5 text-center">
-        <h1>MAKE YOUR CONTENT A PRIORITY.</h1>
-        <h2>I CERTAINLY WILL!</h2>
+        <h1><?php echo strtoupper(get_field('section_2_title_line_1'))?></h1>
+        <h2><?php echo strtoupper(get_field('section_2_title_line_2'))?></h2>
         <hr class="w-25">
     </div>
     <div class="row py-5 secTwoRowOne ">

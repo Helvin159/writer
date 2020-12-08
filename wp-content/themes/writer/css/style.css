@@ -79,6 +79,10 @@ button:hover{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05) !important;
 }
 
+#sec8ErrorMsg{
+    background-color: rgba(0,0,0,0.8);
+}
+
 
 @keyframes opacityChange{
     from{
@@ -179,6 +183,10 @@ color: #c87Af5;
 
 .red{
     color: red;
+}
+
+.white{
+    color: rgba(255,255,255,1);
 }
 
 .bgLightGrey{

@@ -7,6 +7,7 @@
 
                 <!-- <hr class="w-25"> -->
                 <div class="container">
+
                     <form action="#" id="universalForm">
                     <label for="">
                         <input type="text" name="fName" class="px-3" placeholder="Name">
@@ -33,6 +34,7 @@
                     </div>
                     
                     </form>
+                    <h3 class="d-none text-center p-4 white" id="sec8ErrorMsg">Uh Oh, looks like something went wrong. Please Try Again!</h3>
                 </div>
                 
             </div>

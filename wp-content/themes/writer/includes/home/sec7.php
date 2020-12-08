@@ -1,7 +1,7 @@
 <div class="container-fluid py-5">
     <div class="container ">
         <div class="container text-center">
-            <h1>Sometimes I Write About Writing</h1>
+            <h1><?php echo get_field('blog_preview_title')?></h1>
         </div>
         <hr class="w-25">
         <div class="container p-5">
