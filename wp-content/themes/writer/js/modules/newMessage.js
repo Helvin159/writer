@@ -102,7 +102,7 @@ class newMessage {
           if(date.value === ''){
             document.querySelector('#noDateMsg').classList.remove('d-none')
             document.querySelector('#noDateMsg').style.animation = 'opacityChange 0.4s ease-in ';
-            date.addEventListener('keydown', function(){
+            date.addEventListener('focusout', function(){
               setTimeout(function(){
                 if(date.value != ''){
                   document.querySelector('#noDateMsg').classList.add('d-none')
