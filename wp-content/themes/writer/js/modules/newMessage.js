@@ -3,6 +3,7 @@ import axios from "axios";
 // Create new message
 class newMessage {
   constructor() {
+    
     axios.defaults.headers.common["X-WP-Nonce"] = writerData.nonce;
     this.events();
   }
@@ -10,9 +11,13 @@ class newMessage {
   events() {
 
       const form = document.querySelector("#universalForm")
+
       if(form){
         form.addEventListener('submit', this.messageDispatcher)
       }
+
+        
+      
   }
 
   // methods
@@ -139,8 +144,8 @@ class newMessage {
 
       // Variables
       const firstName = document.querySelector('[name="firstName"]')
+      const lastName = document.querySelector('[name="lastName"]')
       const emailAddr = document.querySelector('[name="emailAddr"]')
-      const dateMet = document.querySelector('[name="dateMet"]')
       const file = document.querySelector('[name="file"]')
       const rating = document.querySelector('[name="rating"]')
       const comment = document.querySelector('[name="comment"]')
@@ -151,8 +156,7 @@ class newMessage {
       if(firstName.value != '' && emailAddr.value != '' && comment.value != '' && dateMet.value != null  ){
           var newTestimonial = {
               // message: {
-              title: firstName.value,
-              date: dateMet.value,
+              title: firstName.value + ' ' + lastName,
               email: emailAddr.value,
               comment: comment.value,
               status: "publish",

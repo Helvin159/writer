@@ -1,14 +1,15 @@
 class search{
 
     constructor(){
-        
+        console.log(window.location)
         this.events()
     }
 
     events(){
-        const thumbnail = document.querySelectorAll('.prevWorkThumbnails');
-        const pdfThumbnail = document.querySelectorAll('.pdfThumbnails');
-        const exitBtn = document.querySelector('#closeOverlayBtn');
+        if(window.location.pathname.includes('/prevwork/')){
+            const thumbnail = document.querySelectorAll('.prevWorkThumbnails');
+            const pdfThumbnail = document.querySelectorAll('.pdfThumbnails');
+            const exitBtn = document.querySelector('#closeOverlayBtn');
         // console.dir(thumbnail)
 
             [...thumbnail].forEach((thumbnail)=>{
@@ -52,6 +53,8 @@ class search{
                     document.body.style.overflowY = 'scroll';
                 }
             })
+        }
+        
             };
     }
 

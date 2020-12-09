@@ -14,9 +14,9 @@
 
 
   <?php 
-    require_once('includes/overlay.php');
+    require_once('includes/testimonialOverlay.php');
     
-    if($_SERVER['REQUEST_URI'] != '/book-a-meeting/'){
+    if($_SERVER['REQUEST_URI'] != '/contact/'){
       require_once('includes/calendlyBtn.php');
     }
 

@@ -29,6 +29,7 @@ function writer_post_types(){
     register_post_type('testimonial', array(
     
     'capability_type' => 'testimonial',
+    'taxonomies' => array('category', 'recordings', 'foo'),
     'map_meta_cap' => true,
     'show_in_rest' => true,
     'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),

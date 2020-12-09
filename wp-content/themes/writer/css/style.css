@@ -952,6 +952,40 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 
+.star {
+    visibility: hidden;
+    font-size: 25px;
+    cursor: pointer;
+    color:lightgrey;
+
+}
+
+.star:hover{
+    color: yellow;
+    /* visibility: hidden; */
+}
+
+.star:before {
+    content: "\2605";
+    position: absolute;
+    visibility: visible;
+    color:lightgrey;
+}
+
+.star:checked:before {
+    content: "\2606";
+    position: absolute;
+
+}
+
+.star:checked:after {
+    content: "\2605";
+    position: absolute;
+    visibility: visible;
+    color: yellow;
+}
+
+
 /* **************************** */
 /* Related Information */
 /* **************************** */
@@ -983,7 +1017,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     bottom: 0;
     right: 0;
     display: none;
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(0,0,0,0.85);
     z-index: 2;
 
 }
