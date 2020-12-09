@@ -3,7 +3,6 @@ import axios from "axios";
 // Create new message
 class newMessage {
   constructor() {
-    
     axios.defaults.headers.common["X-WP-Nonce"] = writerData.nonce;
     this.events();
   }
@@ -11,13 +10,19 @@ class newMessage {
   events() {
 
       const form = document.querySelector("#universalForm")
-
+      const testimonialForm = document.querySelector("#testimonialForm")
       if(form){
         form.addEventListener('submit', this.messageDispatcher)
       }
 
-        
-      
+      if(testimonialForm){
+        testimonialForm.addEventListener('submit', (e)=>{
+          e.preventDefault();
+          alert('sent')
+        })
+      }
+
+      console.log(testimonialForm)
   }
 
   // methods
