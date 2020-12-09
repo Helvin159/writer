@@ -1,7 +1,7 @@
 class search{
 
     constructor(){
-        console.log(window.location)
+        // console.log(window.location)
         this.events()
     }
 

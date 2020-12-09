@@ -41,7 +41,7 @@ function message($data){
   $date = sanitize_text_field($data['date']);
   $time = sanitize_text_field($data['time']);
   $email = sanitize_text_field($data['email']);
-  $message = sanitize_text_field($data['comment']);
+  $commentOne = sanitize_text_field($data['comment']);
 
 
   $contentMessage = "
@@ -52,7 +52,7 @@ function message($data){
   Time Available: $time
   
   Message
-  $message";
+  $commentOne";
 
   wp_insert_post(array(
       'post_type' => 'messages',
@@ -89,43 +89,34 @@ function message($data){
 function newTestimonial($data){
 
     // only need these if performing outside of admin environment
-    require_once(ABSPATH . 'wp-admin/includes/media.php');
-    require_once(ABSPATH . 'wp-admin/includes/file.php');
-    require_once(ABSPATH . 'wp-admin/includes/image.php');
+    // require_once(ABSPATH . 'wp-admin/includes/media.php');
+    // require_once(ABSPATH . 'wp-admin/includes/file.php');
+    // require_once(ABSPATH . 'wp-admin/includes/image.php');
 
     $title = sanitize_text_field($data['title']);
-    $date = sanitize_text_field($data['date']);
-    $time = sanitize_text_field($data['time']);
-    $email = sanitize_text_field($data['email']);
-    $image = sanitize_text_field($data['file']);
-    $message = sanitize_text_field($data['comment']);
+    $status = sanitize_text_field($data['status']);
+    // $date = sanitize_text_field($data['date']);
+    // $time = sanitize_text_field($data['time']);
+    // $email = sanitize_text_field($data['email']);
+    // $image = sanitize_text_field($data['file']);
+    $comment = sanitize_text_field($data['comment']);
 
 
-    $attachment_id = media_handle_upload($image, 30);
-    if (is_wp_error($attachment_id)) { 
-      echo 'BIG TIME ERROR'; 
-    } else { 
-      echo 'BIG TIME SUCCESS';
-    }
-
-    $contentMessage = "
-    Here are the details: 
-    Name: $title 
-    Email: $email
-    Date Available: $date
-    Time Available: $time
-  
-    Message:
-    $message";
+    // $attachment_id = media_handle_upload($image, 30);
+    // if (is_wp_error($attachment_id)) { 
+    //   echo 'BIG TIME ERROR'; 
+    // } else { 
+    //   echo 'BIG TIME SUCCESS';
+    // }
 
     $post = wp_insert_post(array(
-      'post_type' => 'messages',
-      'post_status' => 'private',
-      'post_title' => $data['title'],
-      'post_content' => $contentMessage
+      'post_type' => 'testimonial',
+      'post_status' => $status,
+      'post_title' => $title,
+      'post_content' => $comment
     ));
   
-    set_post_thumbnail($post, $attachment_id);
+    // set_post_thumbnail($post, $attachment_id);
 
 
     // Email
@@ -137,7 +128,7 @@ function newTestimonial($data){
       $message = "
       $title
 
-      $contentMessage" ;  
+      $comment" ;  
 
       $message2 = "Thank you for your review!!!!"
       ."\n"."
