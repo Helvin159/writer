@@ -61,7 +61,7 @@
                     ?>
                 </div>
                 <div class="container py-5 text-center">
-                    <a href="<?php echo esc_url(site_url('testimonial'))?>" class="btn btn-lg btnDarkPurple josefinLight lightGrey">All Featured Clients</a>
+                    <a href="<?php echo esc_url(site_url('clients'))?>" class="btn btn-lg btnDarkPurple josefinLight lightGrey">All Featured Clients</a>
                 </div>
             </div>        
         </div>
