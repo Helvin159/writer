@@ -69,6 +69,27 @@ function writer_post_types(){
     'menu_icon' => 'dashicons-performance'
   ));
     
+    register_post_type('clients', array(
+    
+    'capability_type' => 'clients',
+    'map_meta_cap' => true,
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+    'rewrite' => array(
+      'slug' => 'clients'
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'Clients',
+      'add_new_item' => 'Add New Client',
+      'edit_item' => 'Edit A Client',
+      'all_items' => 'All Clients',
+      'singular_name' => 'Client',
+    ),
+    'menu_icon' => 'dashicons-groups'
+  ));
+    
     register_post_type('messages', array(
     
     'capability_type' => 'messages',

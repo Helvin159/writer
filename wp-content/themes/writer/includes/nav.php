@@ -18,12 +18,16 @@
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/my-services/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/my-services'))?>">My Services</a>
       </li>
+      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/packages/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php echo esc_url(site_url('/packages'))?>">Pricing</a>
+      </li>
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/contact/'  ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/contact'))?>">Contact</a>
       </li>
       <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
         <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
       </li>
+      
     </ul>
   </div>
 
