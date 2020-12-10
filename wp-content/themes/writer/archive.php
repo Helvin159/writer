@@ -2,6 +2,7 @@
     get_header();
     require_once('includes/banner.php');
 ?>
+
 <div class="container">
     <div class="row py-5">
         <?php  
@@ -16,7 +17,7 @@
     </div>
 
     <?php if($_SERVER['REQUEST_URI'] == '/testimonial/'){ ?>
-    <div class="container text-right">
+    <div class="container py-5 text-right">
         <button class="btn btn-md btnPurple lightGrey josefinLight fontSize18 my-2" id="newTestimonialBtn">Want to leave a review?</button>
     </div>
     <?php }?>

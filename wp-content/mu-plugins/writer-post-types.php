@@ -81,7 +81,7 @@ function writer_post_types(){
     'public' => true,
     'has_archive' => true,
     'labels' => array(
-      'name' => 'Clients',
+      'name' => 'Featured Clients',
       'add_new_item' => 'Add New Client',
       'edit_item' => 'Edit A Client',
       'all_items' => 'All Clients',

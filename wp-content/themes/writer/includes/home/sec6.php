@@ -37,11 +37,12 @@
 
 
     <?php 
-        $showClients = new WP_Query(array(
-            'posts_per_page' => 6,
-            'post_type' => 'clients',
-            'paged' => false,
-        ));
+    $showClients = new WP_Query(array(
+        'posts_per_page' => 6,
+        'post_type' => 'clients',
+        'paged' => false,
+    ));
+    
     if($showClients->have_posts() !== false){ ?>
         <div class="container py-5">
             <h1 class="text-center">FEATURED CLIENTS</h1>
