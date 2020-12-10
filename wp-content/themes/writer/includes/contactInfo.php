@@ -41,7 +41,7 @@
             </div>
         </div>
             <div class="col-lg-6">
-                <img class="img-fluid contactImg" src="<?php echo get_field('extra_image')?>" alt="">
+                <img class="img-fluid my-3 contactImg" src="<?php echo get_field('extra_image')?>" alt="">
             </div>
     </div>
 </div>

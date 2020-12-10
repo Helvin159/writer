@@ -12,6 +12,8 @@ class newMessage {
       const form = document.querySelector("#universalForm")
       const testimonialForm = document.querySelector("#testimonialForm")
       const newReviewBtn = document.querySelector('#newTestimonialBtn')
+      const exitBtn = document.querySelector('#closeTestOverlayBtn');
+      let overlayOn = false;
  
       if(form){
         form.addEventListener('submit', this.messageDispatcher)
@@ -21,22 +23,43 @@ class newMessage {
         testimonialForm.addEventListener('submit', this.testimonialDispatcher)
       }
 
-      if(window.location.pathname === '/testimonial/'){
+      if(newReviewBtn){
           newReviewBtn.addEventListener('click', function(){
-          document.querySelector('.overlay').style.display = 'block'
+          document.querySelector('#testimonialOverlay').style.display = 'block'
+          document.querySelector('#leaveReviewHeading').classList.remove('d-none')
+          document.querySelector('body').style.overflow = 'hidden'
+          overlayOn = true;
+          // console.log('without return: ', overlayOn)
         })
+
+      }
+
+      // console.log('hmmm:   ', overlayOn)
+      // console.log(testimonialForm)
+
+      if(exitBtn){
+        exitBtn.addEventListener('click', ()=>{
+            document.querySelector('#testimonialOverlay').style.display = 'none';
+            document.querySelector('#leaveReviewHeading').classList.add('d-none')
+            document.querySelector('body').style.overflow = ''
+            // console.log('running now')
+            });
 
         window.addEventListener('keydown', function(e){
           if(e.keyCode === 27){
           // console.log('got it')
-            document.querySelector('.overlay').style.display = 'none';
+            document.querySelector('#testimonialOverlay').style.display = 'none';
+            document.querySelector('#leaveReviewHeading').classList.add('d-none')
+            document.querySelector('body').style.overflow = ''
           }
-
+          // console.log('running now')
+          // console.log('hmmm:   ', overlayOn)
+          overlayOn = false;
+          // console.log(overlayOn)
         })
+
+        
       }
-      // console.log(testimonialForm)
-
-
   }
 
   // methods

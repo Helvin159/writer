@@ -264,6 +264,7 @@ color: #c87Af5;
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.01) !important;
+    z-index: 1;
 }
 
 .navBrand{
@@ -547,7 +548,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 .faqForm textarea{
-    /* width: 100%; */
+    width: 57%;
     margin: 2% 0;
     border: none;
     border-radius: 5px;
@@ -569,8 +570,9 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 .faqMessage h1 {
-    position: absolute;
-    top: 40%;
+    position: relative;
+    margin: 100px 0 20px 0;
+    /* top: 40%; */
     left: 0;
     right: 0;
     text-align: center;
@@ -578,10 +580,10 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 .faqMessage a {
-    position: absolute;
-    top: 65%;
-    left: 40%;
-    right: 40%;
+    position: relative;
+    /* top: 65%; */
+    /* right: 40%;
+    left: 40%; */
     width: auto;
     text-shadow: -2px 3px 8px rgba(0, 0, 0, 0.8);
 }
@@ -628,7 +630,7 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
 }
 
 .contactImg {
-    max-width: 450px;
+    /* max-width: 450px; */
     box-shadow: -2px 2px 8px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.4);
     border-radius: 5px;
 }

@@ -14,13 +14,20 @@
 
 
   <?php 
-    require_once('includes/testimonialOverlay.php');
+    // ************
+    // Overlay
+    // ************
+    require_once('includes/overlay.php');
     
+    // ************
+    // Calendly
+    // ************
     if($_SERVER['REQUEST_URI'] != '/contact/'){
       require_once('includes/calendlyBtn.php');
     }
-
-    
+    // ************
+    // Footer Scripts, etc...
+    // ************
     wp_footer();
 
 ?>

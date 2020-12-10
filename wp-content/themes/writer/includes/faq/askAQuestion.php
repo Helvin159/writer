@@ -15,10 +15,10 @@
                         <input type="email" class="px-3" placeholder="Email">
                     </label>
                     <br>                
-                    <textarea name="" id="" class="" cols="49" rows="5" placeholder="Message"></textarea>
+                    <textarea name="" id="" class=""  rows="5" placeholder="Message" ></textarea>
                     <br>
                     <div class="text-center py-2">
-                        <a class="btn btn-md   josefinLight lightGrey fontSize22">Submit Message</a>
+                        <a class="btn btn-md josefinLight lightGrey fontSize22">Submit Question</a>
                     </div>
                 </form>
             </div>
