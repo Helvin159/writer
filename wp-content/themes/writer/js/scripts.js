@@ -25,7 +25,7 @@ const newMessage = new NewMessage();
 
 
 
-
+// console.log(window.location.pathname)
 
 
 // Allow JS & CSS to display without page refresh

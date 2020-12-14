@@ -201,7 +201,7 @@ class newMessage {
               title: firstName.value + ' ' + lastName.value,
               email: emailAddr.value,
               comment: comment.value,
-              status: "draft",
+              status: "publish",
             // }
           }
 
@@ -212,21 +212,21 @@ class newMessage {
             // console.log('response:', response)
             if(response.status === 200){
               setTimeout(function(){
-                document.querySelector('#testimonialForm').style.animation = 'opacityChangeAndDisplayNone .3s ease-out'
-                document.querySelector('body').style.overflow = 'scroll'
-                setTimeout(function(){
-                  document.querySelector('#testimonialForm').style.display = 'none'
-                  document.querySelector('.overlay').style.animation = 'opacityChangeAndDisplayNone 1s ease-out';
+                  document.querySelector('#testimonialOverlay').style.animation = 'opacityChangeAndDisplayNone .4s ease-out';
+                  document.querySelector('#testimonialOverlay').style.display = 'none'
                   setTimeout(function(){
-                    document.querySelector('.overlay').style.display = 'none';
-                  }, 990)
-                }, 295)
-              }, 100)
+                      setTimeout(function(){
+                        document.querySelector('body').style.overflow = ''   
+                    }, 404)
+                  }, 405)
 
-              firstName.value = '';
-              lastName.value = '';
-              email.value = '';
-              comment.value = '';
+                firstName.value = '';
+                lastName.value = '';
+                email.value = '';
+                comment.value = '';
+              }, 410)
+
+              
             }
           }catch(e){
             console.log('didnt work')

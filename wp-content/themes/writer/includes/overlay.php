@@ -44,3 +44,11 @@
     </div>
 </div>
 
+
+<!-- BEFORE LOAD Overlay -->
+<div id="beforeLoad" class="beforeLoadOverlay p-5">
+    <div class="container text-center beforeLoadText py-5">
+        <h1>danielle rymer</h1>
+    </div>
+</div>
+

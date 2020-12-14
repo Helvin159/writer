@@ -8,8 +8,8 @@
         <?php  
             while(have_posts()){
                 the_post() ?>
-                <div class="col-md-4">
-                    <?php require('includes/smallcard.php')?>
+                <div class="col-md-6">
+                    <?php require('includes/card.php')?>
                 </div>
             <?php } 
             wp_reset_postdata();

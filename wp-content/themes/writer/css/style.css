@@ -65,6 +65,14 @@ a:hover{
     text-shadow: 1px 1px 8px rgba(0,0,0,0,.10);
 }
 
+a:visited{
+    
+    text-decoration: none;
+    transition: .17s ease-out;
+    /* color: #9064de; */
+    text-shadow: 1px 1px 8px rgba(0,0,0,0,.10);
+}
+
 button{
     font-size: 19px !important;
     font-family: josefin-sans,
@@ -830,20 +838,22 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     width: 100%;
     height: 100%;
     max-height: 295px;
-    border-top-left-radius:5px ;
-    border-top-right-radius:5px ;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
 }
 
 .myCard{
     position: relative;
-    border-radius: 5px;
-    box-shadow: -2px 2px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px rgba(0,0,0,0.1);
     transition: .35s ease-in;
+    border: .2px solid rgba(220, 220, 240, .4);
 }
 
-.myCard:hover{
+.myCard:hover,
+.testimonialCard:hover{
     transition: .35s ease-out;
-    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -851,6 +861,10 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     position: relative;
     border-radius: 5px;
     transition: .35s ease-in;
+    border: 1px solid rgba(220,220,240, .4);
+    border-radius: 10px;
+    padding: 3.5% 0;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .testimonialCard img{
@@ -1077,6 +1091,30 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     z-index: 2;
 
 }
+
+.beforeLoadOverlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display:none ;
+    background-color: rgba(0,0,0,1);
+    z-index: 2;
+
+}
+
+.beforeLoadText{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 80px;
+    color: rgba(255,255,255,0.9);
+}
+
+
 
 .openOverlay{
     display: block;
