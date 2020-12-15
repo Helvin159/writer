@@ -4,11 +4,11 @@
     <span class="far fa-compass fontSize30"></i></span>
   </button>
 
-  <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse px-0 headerNavMenu" id="navbarSupportedContent">
     <?php wp_nav_menu( array( 
       'theme_location' => 'header-menu',
       'container' => false,
-      'menu_class' => 'navbar-nav m-auto pr-5 lightgrey header-menu-nav',
+      'menu_class' => 'navbar-nav m-auto pr-5 mr-5 lightgrey header-menu-nav',
 
      ) ); ?>
   </div>
