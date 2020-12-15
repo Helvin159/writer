@@ -20,9 +20,9 @@ function writer(){
   } else{
       // CSS
     //   wp_enqueue_style('my-style', get_theme_file_uri('/css/styles.css'), null, '1.0', 'all');
-      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.b9d58d4bd688a1fc7a8a.css'), null, '1.0', 'all');
+      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.4bd7a3286a40a6f43775.css'), null, '1.0', 'all');
       wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/vendors~scripts.5249d3b661725de98a3a.js'), NULL, '1.0', true);
-      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.b9d58d4bd688a1fc7a8a.js'), NULL, '1.0', true);
+      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.4bd7a3286a40a6f43775.js'), NULL, '1.0', true);
     }
   
   // Nonce
