@@ -1086,14 +1086,13 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     }
 
     .menu-item a,
-    .menu-item a:visited,
     .menu-item a:link{
         color: lightgray;
         text-decoration: none;
 
     }
     .menu-item{
-        margin-left: 2.5%;
+        margin-left: 3.5%;
     }
 
     .menu-item:first-child{
