@@ -115,19 +115,19 @@ class scrollEvents{
 
     expandAboutSkills(){
         const bars = document.querySelectorAll('.ratingBar');
-        bars[0].style.animation = 'gradient 2.5s ease-in';
+        bars[0].style.animation = 'gradient 1.8s ease-in-out';
         bars[0].style.transformOrigin = 'left';
         bars[0].style.opacity = '1';
 
-        bars[1].style.animation = 'gradient 2.5s ease-in';
+        bars[1].style.animation = 'gradient 1.8s ease-in-out';
         bars[1].style.transformOrigin = 'left';
         bars[1].style.opacity = '1';
 
-        bars[2].style.animation = 'gradient 2.5s ease-in';
+        bars[2].style.animation = 'gradient 1.8s ease-in-out';
         bars[2].style.transformOrigin = 'left';
         bars[2].style.opacity = '1';
 
-        bars[3].style.animation = 'gradient 2.5s ease-in';
+        bars[3].style.animation = 'gradient 1.8s ease-in-out';
         bars[3].style.transformOrigin = 'left';
         bars[3].style.opacity = '1';
     }
