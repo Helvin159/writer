@@ -1,6 +1,6 @@
 <!-- Thumbnail Overlay -->
 <div id="thumbOverlay" class="overlay p-5">
-    <i id="closeOverlayBtn" class="searchExit far fa-window-close lightGrey"></i>
+    <i id="closeOverlayBtn" class="searchExit far fa-window-close"></i>
     <div class="container text-center overlayContent py-5">
 
 
@@ -8,13 +8,17 @@
 </div>
 
 <!-- Testimonial Overlay -->
-<div id="testimonialOverlay" class="overlay p-5">
-        <i id="closeTestOverlayBtn" class="searchExit far fa-window-close lightGrey"></i>
-    <div id="leaveReviewHeading" class="container text-center d-none pt-5 lightGrey">
+<div id="testimonialOverlay" class="testimonialOverlay p-5">
+        <i id="closeTestOverlayBtn" class="searchExit far fa-window-close"></i>
+    <div id="leaveReviewHeading" class="container text-center d-none pt-5 ">
         <h1>Leave a review!</h1>
     </div>
-    <div class="container text-center overlayContent py-5">
-        <form action="#" id="testimonialForm">
+    <div class="row py-5">
+        <div class="col-6 ">
+            <?php require_once('svg/1.php')?>
+        </div>
+        <div class="col-6 pt-5">
+            <form action="#" id="testimonialForm">
             <input type="text" name="firstName" placeholder="First Name">
             <input type="text" name="lastName" placeholder="Last Name">
             <br>
@@ -36,11 +40,15 @@
                 <input type="hidden" name="testimonialPicId" value="">
             </label> -->
             <br>
-            <textarea name="comment" id="" rows="5" placeholder="Comment" style="width:415px;"></textarea>
+            <textarea name="comment" id="" rows="5" placeholder="Comment" ></textarea>
             <br>
                 <input type="submit" name="submit" value="Submit Review" class="btn btn-md btnPurple lightGrey josefinLight fontSize18 my-2">
 
-        </form>
+            </form>
+        </div>
+    </div>
+    <div class="container text-center overlayContent py-5">
+        
     </div>
 </div>
 
@@ -48,7 +56,7 @@
 <!-- BEFORE LOAD Overlay -->
 <div id="beforeLoad" class="beforeLoadOverlay p-5">
     <div class="container text-center beforeLoadText py-5">
-        <h1>danielle rymer</h1>
+        <h1>welcome!</h1>
     </div>
 </div>
 

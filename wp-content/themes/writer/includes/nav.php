@@ -5,30 +5,37 @@
   </button>
 
   <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto pr-5">
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/'))?>">Home <span class="sr-only">(current)</span></a>
+    <?php wp_nav_menu( array( 
+      'theme_location' => 'header-menu',
+      'container' => false,
+      'menu_class' => 'navbar-nav m-auto pr-5 lightgrey header-menu-nav',
+
+     ) ); ?>
+
+    <!-- <ul class="navbar-nav m-auto pr-5">
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/'))?>">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/about/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/about'))?>">About</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/about/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/about'))?>">About</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/my-work/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/my-work'))?>">My Work</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/my-work/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/my-work'))?>">My Work</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/my-services/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/my-services'))?>">My Services</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/my-services/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/my-services'))?>">My Services</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/packages/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/packages'))?>">Pricing</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/packages/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/packages'))?>">Pricing</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/contact/'  ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/contact'))?>">Contact</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/contact/'  ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/contact'))?>">Contact</a>
       </li>
-      <li class="nav-item <?php if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
-        <a class="nav-link" href="<?php echo esc_url(site_url('/blog'))?>">Blog</a>
+      <li class="nav-item <?php //if($_SERVER['REQUEST_URI'] == '/blog/' ){ echo 'active'; }?>">
+        <a class="nav-link" href="<?php //echo esc_url(site_url('/blog'))?>">Blog</a>
       </li>
       
-    </ul>
+    </ul> -->
   </div>
 
     <!-- ********************** Placeholder ******************** -->

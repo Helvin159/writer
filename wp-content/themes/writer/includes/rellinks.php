@@ -6,38 +6,30 @@
     <div class="container">
         <div class="row">
         <div class="col-md-4 links">
-            <div class="container">
-                <h5 class="lightGrey">Contact</h5>
-            </div>
-            <ul>
+            <?php 
+            $classes = 'navbar-nav m-auto lightGrey lindenHillRegular fontSize20'; 
 
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo admin_url() ?>"> Admin </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="tel:9295236682"> (888) 989 - 0928 </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="mailto:helvin@helvinrymer.com"> info@DanielleRymer.com </a></li>
-                
-            </ul>
+            wp_nav_menu( array( 
+                'menu' => 'related-links-col-1',
+                'container' => false,
+                'menu_class' => $classes,
+                'menu_id' => 'rellinksmenu',      
+            ) ); ?>
         </div>
         <div class="col-md-4 links">
-            <div class="container">
-                <h5 class="lightGrey">Pages</h5>
-            </div>
-            <ul>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/blog')) ?>"> Blog </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/structure')) ?>"> Structure </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/prevwork')) ?>"> My Work </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/content-strategy')) ?>"> Content Strategy </a></li>
-            </ul>
+            <?php wp_nav_menu( array( 
+                'menu' => 'related-links-col-2',
+                'container' => false,
+                'menu_class' => $classes,
+      
+            ) ); ?>
         </div>
         <div class="col-md-4 links">
-            <div class="container">
-                <h5 class="lightGrey">FAQ</h5>
-            </div>
-            <ul>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/testimonial')); ?>"> Testimonials </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php echo esc_url(site_url('/faq')) ?>"> FAQ </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Pricing </a></li>
-                <li><a class="lightGrey lindenHillRegular fontSize20" href="<?php ?>"> Packages </a></li>
-            </ul>
+            <?php wp_nav_menu( array( 
+                'menu' => 'related-links-col-3',
+                'container' => false,
+                'menu_class' => $classes,
+            ) ); ?>
         </div>
     </div>
     </div>
