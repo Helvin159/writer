@@ -1,4 +1,4 @@
-<div class="container-fluid frontHero">
+<div class="container-fluid frontHero" >
             <div class="container beforeLoad fadeIn frontHeroText text-center">
                 <h1 ><?php echo strtoupper(get_field('hero_text_line_1'))?></h1>
                 <h3 ><?php echo strtoupper(get_field('hero_text_line_2'))?></h3>

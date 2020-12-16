@@ -475,7 +475,7 @@ url('../assets/img/11.jpg') !important;
 .formContainer input[type=text],
 .formContainer input[type=email] {
     border: none;
-    width: 300px;
+    width: 100%;
     height: 40px;;
     border-radius: 5px;
     font-family: adobe-garamond-pro,
@@ -497,18 +497,22 @@ url('../assets/img/11.jpg') !important;
     serif;
     font-weight: 400;
     font-style: normal;
-    font-size:16px
+    font-size:16px;
 }
 
 .formContainer input[type=date]{
-    margin-right: 5px;
+    margin:5px 0;
+    min-width: 188.5px;
 }
 .formContainer input[type=time]{
-    margin-left: 5px;
+    margin:5px 5px;
+    min-width: 188.5px;
 }
 
 .formContainer textarea{
-    width: 300px;
+    width: 100%;
+    min-width: 188.5px;
+    min-height: 150px;
     border-radius: 5px;
     border: none;
     font-family: adobe-garamond-pro,
@@ -1209,10 +1213,10 @@ box-shadow:2px 2px 8px rgba(0,0,0,0.2)
     height: 100vh;
     width: 100vw;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-        url('../assets/img/1.jpg') !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
+        url('../assets/img/1.jpg') ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     clip-path: polygon(0 0,100% 0, 100% 100%, 0 95vh);
 }
 
@@ -1229,7 +1233,7 @@ body{
     margin: 0;
     overflow-x:hidden;
     background-color: #FFFFFF;
-
+    
 }
 
 /* ******************************************** */

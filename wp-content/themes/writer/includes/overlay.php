@@ -14,10 +14,10 @@
         <h1>Leave a review!</h1>
     </div>
     <div class="row py-5">
-        <div class="col-6 ">
+        <div class="col-6  d-none d-sm-none d-md-block d-lg-block">
             <?php require_once('svg/1.php')?>
         </div>
-        <div class="col-6 pt-5">
+        <div class="col-sm-12 text-center col-md-6 col-lg-6 pt-5">
             <form action="#" id="testimonialForm">
             <input type="text" name="firstName" placeholder="First Name">
             <input type="text" name="lastName" placeholder="Last Name">
@@ -55,7 +55,7 @@
 
 <!-- BEFORE LOAD Overlay -->
 <div id="beforeLoad" class="beforeLoadOverlay p-5">
-    <div class="container text-center beforeLoadText py-5">
+    <div class="container text-center beforeLoadText py-5 ">
         <h1>welcome!</h1>
     </div>
 </div>
