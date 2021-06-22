@@ -5,7 +5,7 @@ class scrollEvents{
 
     events(){
 
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/pages/writer/'){
             let hasRun = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
@@ -20,7 +20,7 @@ class scrollEvents{
             });
         }  
 
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/pages/writer'){
             let isAnimated = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
@@ -33,7 +33,7 @@ class scrollEvents{
             });
         }
 
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/pages/writer'){
             let animated = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
@@ -46,7 +46,7 @@ class scrollEvents{
             });
         }
         
-        if(window.location.pathname === '/about/'){
+        if(window.location.pathname === '/pages/writer/about'){
             let isOpen = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;

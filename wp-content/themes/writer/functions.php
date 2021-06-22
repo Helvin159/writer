@@ -12,7 +12,7 @@ function writer(){
   // Bootstrap
   wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', null, '1.0', 'all');
   
-  if(strstr($_SERVER['SERVER_NAME'], 'enya.local')){
+  if(strstr($_SERVER['SERVER_NAME'], 'danielle.local')){
     // Bundled Files
     wp_enqueue_script('main-writer-scripts', 'http://localhost:3000/bundled.js', NULL, '1.0', true);// CSS
     wp_enqueue_style('my-style', get_theme_file_uri('/css/style.css'), null, '1.0', 'all');
@@ -20,10 +20,11 @@ function writer(){
   } else{
       // CSS
     //   wp_enqueue_style('my-style', get_theme_file_uri('/css/styles.css'), null, '1.0', 'all');
-      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.51d991d49586e72615dc.css'), null, '1.0', 'all');
+      wp_enqueue_style('my-style', get_theme_file_uri('/bundled-assets/styles.0abeba5f12ae7c3da9fb.css'), null, '1.0', 'all');
       wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/vendors~scripts.5249d3b661725de98a3a.js'), NULL, '1.0', true);
-      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.51d991d49586e72615dc.js'), NULL, '1.0', true);
+      wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.0abeba5f12ae7c3da9fb.js'), NULL, '1.0', true);
     }
+    
   
   // Nonce
     wp_localize_script('main-writer-scripts', 'writerData', array(
@@ -33,10 +34,10 @@ function writer(){
 
 
   // Jquery
-  wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.5.1.slim.min.js', NULL, '1.0', true);
+  // wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.5.1.slim.min.js', NULL, '1.0', true);
 
   // Popper
-  wp_enqueue_script('popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', NULL, '1.0', true);
+  // wp_enqueue_script('popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', NULL, '1.0', true);
   // Bootstrap JS
   wp_enqueue_script('bootsrap', '//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', NULL, '1.0', true);
 }

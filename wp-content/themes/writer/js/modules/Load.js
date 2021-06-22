@@ -5,7 +5,7 @@ class windowLoad{
 
     load(){
 
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/pages/writer'){
             document.querySelector('#beforeLoad').style.display = 'block';
             document.body.style.overflow = 'hidden'
         }
@@ -17,14 +17,15 @@ class windowLoad{
             heroText.style.transition = '1s ease-in';
             heroText.classList.remove('beforeLoad');
             
-            if(window.location.pathname === '/'){
-                console.log('got it')
+            if(window.location.pathname === '/pages/writer'){
+                console.log(window.location.pathname)
                 setTimeout(function(){
                 document.querySelector('#beforeLoad').style.animation = 'opacityChangeAndDisplayNone 1s ease-out';
                 setTimeout(function(){
                     document.querySelector('#beforeLoad').style.display = 'none';
                     document.body.style.overflow = ''
                 }, 1000)
+                
             }, 1000)
             }
             

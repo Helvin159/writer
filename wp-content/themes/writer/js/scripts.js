@@ -1,4 +1,4 @@
-import '../css/style.css'
+import '../css/style.css';
 // const url = window.location.href;
 // const uri = window.location.pathname;
 // console.log(uri)
@@ -25,7 +25,7 @@ const newMessage = new NewMessage();
 
 
 
-// console.log(window.location.pathname)
+console.log(window.location.pathname);
 
 
 // Allow JS & CSS to display without page refresh
