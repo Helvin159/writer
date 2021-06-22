@@ -46,7 +46,7 @@ class scrollEvents{
             });
         }
         
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/about/'){
             let isOpen = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
