@@ -18,9 +18,33 @@ class scrollEvents{
                     return hasRun = true;
                 }
             });
+        }else if(window.location.pathname === '/pages/writer/'){
+            let hasRun = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+                // console.log(windowPos)
+                if(windowPos >= 1250 && hasRun != true){
+                    this.consultations();
+                    this.editorial();
+                    this.webCont();
+                    this.copyright();
+                    return hasRun = true;
+                }
+            });
         }  
 
         if(window.location.pathname === '/'){
+            let isAnimated = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+
+                if(windowPos >= 2046 && isAnimated != true){
+                    // console.log(windowPos)
+                    this.animateLaptopSvg();
+                    return isAnimated = true;
+                }
+            });
+        }else if(window.location.pathname === '/pages/writer/'){
             let isAnimated = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
@@ -44,9 +68,31 @@ class scrollEvents{
                     return animated = true;
                 }
             });
+        } else if(window.location.pathname === '/pages/writer/'){
+            let animated = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+                    // console.log(windowPos)
+                if(windowPos >= 3232 && animated != true){
+                    // console.log(windowPos)
+                    this.animateBlackboard();
+                    return animated = true;
+                }
+            });
         }
         
         if(window.location.pathname === '/about/'){
+            let isOpen = false;
+            window.addEventListener('scroll', ()=>{
+                let windowPos = window.scrollY;
+
+                // console.log(windowPos)
+                if(windowPos >= 1300 && isOpen != true){
+                    this.expandAboutSkills();
+                    return isOpen = true;
+                }
+            });
+        }else if(window.location.pathname === '/pages/writer/about/'){
             let isOpen = false;
             window.addEventListener('scroll', ()=>{
                 let windowPos = window.scrollY;
