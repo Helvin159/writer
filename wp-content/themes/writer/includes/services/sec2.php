@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row">
                     <?php 
-                        echo $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/card.php';
+                        echo $_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/card.php';
 
                         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                         $showPages = new WP_Query(array(
