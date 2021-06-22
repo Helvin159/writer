@@ -18,7 +18,7 @@ class windowLoad{
             heroText.classList.remove('beforeLoad');
             
             if(window.location.pathname === '/'){
-                console.log(window.location.pathname)
+                // console.log(window.location.pathname)
                 setTimeout(function(){
                 document.querySelector('#beforeLoad').style.animation = 'opacityChangeAndDisplayNone 1s ease-out';
                 setTimeout(function(){

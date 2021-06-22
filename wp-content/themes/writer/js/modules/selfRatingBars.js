@@ -5,7 +5,8 @@ class selfRating{
     }
 
     ratings(){
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/about/'){
+            
             const ratingBar1 = document.querySelector('#ratingBarOne');
             const ratingBar2 = document.querySelector('#ratingBarTwo');
             const ratingBar3 = document.querySelector('#ratingBarThree');
