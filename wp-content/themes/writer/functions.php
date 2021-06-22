@@ -4,7 +4,6 @@ require get_theme_file_path('/includes/routes.php');
 
 // Files
 function writer(){
-  
   // Font Awesome
   wp_enqueue_style('font_awesome', '//use.fontawesome.com/releases/v5.14.0/css/all.css', null, '1.0', 'all');
   // Bootstrap
@@ -22,13 +21,11 @@ function writer(){
       wp_enqueue_script('main-writer-scripts', get_theme_file_uri('/bundled-assets/scripts.5bcb60bbc0493dd7027e.js'), NULL, '1.0', true);
     }
     
-  
   // Nonce
     wp_localize_script('main-writer-scripts', 'writerData', array(
     'root_url' => get_site_url(),
     'nonce' => wp_create_nonce('wp_rest')
   ));  
-
 
   // Jquery
   wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.5.1.slim.min.js', NULL, '1.0', true);
