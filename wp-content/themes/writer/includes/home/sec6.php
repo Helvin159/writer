@@ -20,7 +20,7 @@
                                         if($_SERVER['SERVER_NAME'] == 'danielle.local'){
                                             require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/testimonials.php');
                                         }else{
-                                            require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/testimonials.php');
+                                            require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/testimonials.php');
                                         } ?>
                                 </div>
                             <?php }
@@ -54,7 +54,7 @@
                             $showClients->the_post() ?>
                             <div class="col-md-2">
                                 <?php 
-                                    require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/clients.php');
+                                    require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/clients.php');
                                 ?>
                             </div>
                         <?php }

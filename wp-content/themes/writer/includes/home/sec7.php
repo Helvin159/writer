@@ -20,7 +20,7 @@
                             if($_SERVER['SERVER_NAME'] == 'danielle.local'){
                                 require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/smallcard.php');
                             }else{
-                                require($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/writer/includes/smallcard.php');
+                                require($_SERVER['DOCUMENT_ROOT'] . '/pages/writer/wp-content/themes/writer/includes/smallcard.php');
                             } ?>
                         </div>
                     <?php   }    
