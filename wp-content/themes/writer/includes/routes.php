@@ -120,9 +120,9 @@ function newTestimonial($data){
 
 
     // Email
-      $to = "Helvin@HelvinRymer.com,danielle@daniellerymer.com"; // this is your Email address
+      $to = "Helvin@HelvinRymer.com"; // this is your Email address
       $from = $email; // this is the sender's Email address
-      $subject = "New Testimonial For DanielleRymer.com!";
+      $subject = "New Testimonial For HelvinRymer.com!";
       $subject2 = "Thank you!";
 
       $message = "
@@ -132,9 +132,9 @@ function newTestimonial($data){
 
       $message2 = "Thank you for your review!!!!"
       ."\n"."
-      Danielle Rymer
-      DanielleRymer.com
-      Danielle@DanielleRymer.com";
+      Helvin Rymer
+      HelvinRymer.com
+      Helvin@HelvinRymer.com";
 
       $headers = "From:" . $from;
       $headers2 = "From:" . $to;
