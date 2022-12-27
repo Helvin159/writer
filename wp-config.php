@@ -26,7 +26,7 @@ if(strstr($_SERVER['SERVER_NAME'], 'danielle.local')){
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 }else{
-	define( 'DB_NAME', 'kmmkcamy_writer_theme' );
+	define( 'DB_NAME', 'kmmkcamy_writer' );
 	define( 'DB_USER', 'kmmkcamy_mrrymer' );
 	define( 'DB_PASSWORD', 'DoRa0411!?!' );
 	define( 'DB_HOST', 'localhost' );
